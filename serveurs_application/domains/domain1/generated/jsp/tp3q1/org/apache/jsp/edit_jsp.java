@@ -43,6 +43,10 @@ public final class edit_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
 
+if (session.getAttribute("username") == null) {
+    response.sendRedirect(request.getContextPath() + "/index.jsp");
+}
+
 String username = (String)session.getAttribute("username");
 Integer age = (Integer)session.getAttribute("age");
 String city = (String)session.getAttribute("city");

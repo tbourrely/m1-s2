@@ -44,6 +44,12 @@ public final class userdata_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 
 String username = request.getParameter("username");
+
+if (username == null) {
+    response.sendRedirect(request.getContextPath() + "/index.jsp");
+}
+
+
 session.setAttribute("username", username);
 
 String detailsURL = response.encodeURL("/tp3/details.jsp");

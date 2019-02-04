@@ -1,4 +1,8 @@
 <%
+if (session.getAttribute("username") == null) {
+    response.sendRedirect(request.getContextPath() + "/index.jsp");
+}
+
 String username = (String)session.getAttribute("username");
 Integer age = (Integer)session.getAttribute("age");
 String city = (String)session.getAttribute("city");

@@ -7,8 +7,11 @@ import javax.servlet.http.*;
 public class SessionEditor extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
-        
 
+        if (session.getAttribute("username") == null) {
+            response.sendRedirect(request.getContextPath() + "/index.jsp");
+        }
+        
         String username = request.getParameter("username");
         String city = request.getParameter("city");
         Integer age = Integer.parseInt(request.getParameter("age"));

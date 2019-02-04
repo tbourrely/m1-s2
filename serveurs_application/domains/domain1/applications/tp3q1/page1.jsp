@@ -1,4 +1,8 @@
 <% 
+    if (session.getAttribute("username") == null) {
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
+    }
+
     String detailsURL = response.encodeURL("/tp3/details.jsp");
 %>
 

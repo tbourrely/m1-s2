@@ -44,6 +44,10 @@ public final class details_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 
 
+if (session.getAttribute("username") == null) {
+    response.sendRedirect(request.getContextPath() + "/index.jsp");
+}
+
 String username = (String)session.getAttribute("username");
 
 Integer age = 0;
