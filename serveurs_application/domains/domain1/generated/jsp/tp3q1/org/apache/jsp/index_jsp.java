@@ -42,10 +42,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+
+String formUrl = response.encodeURL("/tp3/userdata.jsp");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("    <head></head>\n");
       out.write("    <body>\n");
-      out.write("        <form method=\"POST\" action=\"/tp3/userdata.jsp\">\n");
+      out.write("        <form method=\"POST\" action=\"");
+      out.print( formUrl );
+      out.write("\">\n");
       out.write("            <input type=\"text\" name=\"username\" required>\n");
       out.write("            <input type=\"submit\" value=\"Valider\">\n");
       out.write("        </form>\n");

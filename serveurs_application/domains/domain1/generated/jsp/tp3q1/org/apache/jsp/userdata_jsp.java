@@ -46,6 +46,9 @@ public final class userdata_jsp extends org.apache.jasper.runtime.HttpJspBase
 String username = request.getParameter("username");
 session.setAttribute("username", username);
 
+String detailsURL = response.encodeURL("/tp3/details.jsp");
+
+
       out.write("\n");
       out.write("\n");
       out.write("<html>\n");
@@ -54,7 +57,9 @@ session.setAttribute("username", username);
       out.write("        <h1>Saisie d'informations pour ");
       out.print( username );
       out.write("</h1>\n");
-      out.write("        <form method=\"POST\" action=\"/tp3/details.jsp\">\n");
+      out.write("        <form method=\"POST\" action=\"");
+      out.print( detailsURL );
+      out.write("\">\n");
       out.write("            <label for=\"age\">Age</label>\n");
       out.write("            <input type=\"number\" name=\"age\" id=\"age\" required>\n");
       out.write("            <label for=\"city\">Ville</label>\n");

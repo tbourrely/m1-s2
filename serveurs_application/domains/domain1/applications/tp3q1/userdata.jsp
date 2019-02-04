@@ -1,13 +1,16 @@
 <%
 String username = request.getParameter("username");
 session.setAttribute("username", username);
+
+String detailsURL = response.encodeURL("/tp3/details.jsp");
+
 %>
 
 <html>
     <head></head>
     <body>
         <h1>Saisie d'informations pour <%= username %></h1>
-        <form method="POST" action="/tp3/details.jsp">
+        <form method="POST" action="<%= detailsURL %>">
             <label for="age">Age</label>
             <input type="number" name="age" id="age" required>
             <label for="city">Ville</label>

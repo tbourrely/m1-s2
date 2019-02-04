@@ -1,7 +1,11 @@
+<% 
+    String detailsURL = response.encodeURL("/tp3/details.jsp");
+%>
+
 <html>
 <body>
 
-<a href="/tp3/details.jsp">Details</a>
+<a href="<%= detailsURL %>">Details</a>
 <br>
 
 

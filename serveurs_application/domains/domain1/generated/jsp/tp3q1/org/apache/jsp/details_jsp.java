@@ -66,6 +66,12 @@ if (session.getAttribute("city") != null) {
 session.setAttribute("age", age);
 session.setAttribute("city", city);
 
+
+String editURL = response.encodeURL("/tp3/edit.jsp");
+String page1URL = response.encodeURL("/tp3/page1.jsp");
+String quitURL = response.encodeURL("/tp3/quitsession");
+
+
       out.write("\n");
       out.write("\n");
       out.write("<html>\n");
@@ -92,9 +98,15 @@ session.setAttribute("city", city);
       out.write("            </tr>\n");
       out.write("        </table>\n");
       out.write("        \n");
-      out.write("        <a href=\"/tp3/edit.jsp\">Editer le profil</a><br>\n");
-      out.write("        <a href=\"/tp3/page1.jsp\">Page 1</a><br>\n");
-      out.write("        <a href=\"/tp3/quitsession\">Quitter la session</a>\n");
+      out.write("        <a href=\"");
+      out.print( editURL );
+      out.write("\">Editer le profil</a><br>\n");
+      out.write("        <a href=\"");
+      out.print( page1URL );
+      out.write("\">Page 1</a><br>\n");
+      out.write("        <a href=\"");
+      out.print( quitURL );
+      out.write("\">Quitter la session</a>\n");
       out.write("    </body>\n");
       out.write("</html>");
     } catch (Throwable t) {

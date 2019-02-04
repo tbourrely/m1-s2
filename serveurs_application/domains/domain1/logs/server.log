@@ -6780,3 +6780,66 @@ Did you forget to reset the value after changing the options? ]]
 [2019-02-04T15:45:52.594+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=46 _ThreadName=admin-listener(4)] [timeMillis: 1549291552594] [levelValue: 800] [[
   tp3q1 was successfully deployed in 121 milliseconds.]]
 
+[2019-02-04T16:02:30.819+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549292550819] [levelValue: 800] [[
+  uploadFileName=tp3q2.war]]
+
+[2019-02-04T16:02:30.840+0100] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=44 _ThreadName=Thread-8] [timeMillis: 1549292550840] [levelValue: 800] [[
+  ================== availabilityEnabled  skipped ]]
+
+[2019-02-04T16:02:30.925+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549292550925] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:02:30.965+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549292550965] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:02:30.967+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549292550967] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:02:31.024+0100] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549292551024] [levelValue: 800] [[
+  Loading application [tp3q1] at [/tp3]]]
+
+[2019-02-04T16:02:31.037+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549292551037] [levelValue: 800] [[
+  tp3q1 was successfully deployed in 192 milliseconds.]]
+
+[2019-02-04T16:08:15.967+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=46 _ThreadName=admin-listener(4)] [timeMillis: 1549292895967] [levelValue: 800] [[
+  uploadFileName=tp3q2.war]]
+
+[2019-02-04T16:08:15.979+0100] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=46 _ThreadName=Thread-8] [timeMillis: 1549292895979] [levelValue: 800] [[
+  ================== availabilityEnabled  skipped ]]
+
+[2019-02-04T16:08:16.026+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549292896026] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:08:16.051+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549292896051] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:08:16.053+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549292896053] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:08:16.100+0100] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549292896100] [levelValue: 800] [[
+  Loading application [tp3q1] at [/tp3]]]
+
+[2019-02-04T16:08:16.108+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549292896108] [levelValue: 800] [[
+  tp3q1 was successfully deployed in 127 milliseconds.]]
+
+[2019-02-04T16:11:23.269+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549293083269] [levelValue: 800] [[
+  uploadFileName=tp3q2.war]]
+
+[2019-02-04T16:11:23.291+0100] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=47 _ThreadName=Thread-8] [timeMillis: 1549293083291] [levelValue: 800] [[
+  ================== availabilityEnabled  skipped ]]
+
+[2019-02-04T16:11:23.345+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549293083345] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:11:23.383+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549293083383] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:11:23.386+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549293083386] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:11:23.444+0100] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549293083444] [levelValue: 800] [[
+  Loading application [tp3q1] at [/tp3]]]
+
+[2019-02-04T16:11:23.456+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549293083456] [levelValue: 800] [[
+  tp3q1 was successfully deployed in 162 milliseconds.]]
+

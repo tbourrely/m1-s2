@@ -42,10 +42,17 @@ public final class page1_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+ 
+    String detailsURL = response.encodeURL("/tp3/details.jsp");
+
+      out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("<body>\n");
       out.write("\n");
-      out.write("<a href=\"/tp3/details.jsp\">Details</a>\n");
+      out.write("<a href=\"");
+      out.print( detailsURL );
+      out.write("\">Details</a>\n");
       out.write("<br>\n");
       out.write("\n");
       out.write("\n");

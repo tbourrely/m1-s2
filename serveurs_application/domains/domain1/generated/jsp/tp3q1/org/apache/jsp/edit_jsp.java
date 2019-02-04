@@ -47,12 +47,16 @@ String username = (String)session.getAttribute("username");
 Integer age = (Integer)session.getAttribute("age");
 String city = (String)session.getAttribute("city");
 
+String formURL = response.encodeURL("/tp3/editsession");
+
 
       out.write("\n");
       out.write("\n");
       out.write("<html>\n");
       out.write("    <body>\n");
-      out.write("        <form method=\"POST\" action=\"/tp3/editsession\">\n");
+      out.write("        <form method=\"POST\" action=\"");
+      out.print( formURL );
+      out.write("\">\n");
       out.write("            <input type=\"text\" name=\"username\" value=\"");
       out.print( username );
       out.write("\">\n");

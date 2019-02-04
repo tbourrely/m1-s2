@@ -21,6 +21,12 @@ if (session.getAttribute("city") != null) {
 
 session.setAttribute("age", age);
 session.setAttribute("city", city);
+
+
+String editURL = response.encodeURL("/tp3/edit.jsp");
+String page1URL = response.encodeURL("/tp3/page1.jsp");
+String quitURL = response.encodeURL("/tp3/quitsession");
+
 %>
 
 <html>
@@ -41,8 +47,8 @@ session.setAttribute("city", city);
             </tr>
         </table>
         
-        <a href="/tp3/edit.jsp">Editer le profil</a><br>
-        <a href="/tp3/page1.jsp">Page 1</a><br>
-        <a href="/tp3/quitsession">Quitter la session</a>
+        <a href="<%= editURL %>">Editer le profil</a><br>
+        <a href="<%= page1URL %>">Page 1</a><br>
+        <a href="<%= quitURL %>">Quitter la session</a>
     </body>
 </html>
