@@ -6,9 +6,11 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import { WebBrowser } from 'expo';
+
+import { MaterialIcons } from '@expo/vector-icons';
 
 import { MonoText } from '../components/StyledText';
 
@@ -19,48 +21,29 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <View style={styles.welcomeContainer}>
-            <Image
-              source={
-                __DEV__
-                  ? require('../assets/images/robot-dev.png')
-                  : require('../assets/images/robot-prod.png')
-              }
-              style={styles.welcomeImage}
-            />
-          </View>
+        <View style={{flex: 1, flexDirection: 'column', backgroundColor: '#EEEFF2'}}>
+          <View style={{flex: 3, justifyContent: 'center', alignItems: 'center', paddingTop: 50}}>
 
-          <View style={styles.getStartedContainer}>
-            {this._maybeRenderDevelopmentModeWarning()}
-
-            <Text style={styles.getStartedText}>Get started by opening</Text>
-
-            <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText style={styles.codeHighlightText}>screens/HomeScreen.js</MonoText>
+            <View>
+              <Image source={{uri: 'https://m.media-amazon.com/images/I/71fC8ZDzrnL._SS500_.jpg'}}
+                     style={{width: 300, height: 300}} />
             </View>
 
-            <Text style={styles.getStartedText}>
-              Reload
-            </Text>
+            <View style={{marginTop: 20}}>
+              <Text style={{textAlign: 'center', fontSize: 25, fontWeight: 'bold', color: '#011627'}}>A Million on My Soul</Text>
+              <Text style={{textAlign: 'center', fontSize: 20, color: '#011627'}}>Alexiane</Text>
+            </View>
           </View>
 
-          <View style={styles.helpContainer}>
-            <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
-              <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
+          <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', paddingBottom: 40}}>
+            <TouchableOpacity style={{backgroundColor: '#2EC4B6', borderRadius: 50, padding: 10 }}>
+              <MaterialIcons name="mic-none" size={70} color="#EFF0F3" />
+            </TouchableOpacity>
+            <TouchableOpacity style={{backgroundColor: '#2EC4B6', marginLeft: 30, borderRadius: 50, padding: 10 }}>
+              <MaterialIcons name="pause" size={70} color="#EFF0F3" />
             </TouchableOpacity>
           </View>
-        </ScrollView>
-
-        <View style={styles.tabBarInfoContainer}>
-          <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
-
-          <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <MonoText style={styles.codeHighlightText}>navigation/MainTabNavigator.js</MonoText>
-          </View>
         </View>
-      </View>
     );
   }
 

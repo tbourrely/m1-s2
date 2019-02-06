@@ -54,6 +54,7 @@
   <servers>
     <server config-ref="server-config" name="server">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
+      <application-ref ref="tp3q1" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
@@ -453,5 +454,16 @@
     <secure-admin-principal dn="CN=pandoraMachine-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
   </secure-admin>
   <clusters></clusters>
-  <applications></applications>
+  <applications>
+    <application context-root="/tp3" object-type="user" name="tp3q1" location="${com.sun.aas.instanceRootURI}/applications/tp3q1/">
+      <property name="archiveType" value="war"></property>
+      <property name="java-web-start-enabled" value="true"></property>
+      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/tp3q1/tp3q34102096914103715788.war"></property>
+      <property name="defaultAppName" value="tp3q34102096914103715788"></property>
+      <module name="tp3q1">
+        <engine sniffer="security"></engine>
+        <engine sniffer="web"></engine>
+      </module>
+    </application>
+  </applications>
 </domain>

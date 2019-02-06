@@ -6906,3 +6906,142 @@ Did you forget to reset the value after changing the options? ]]
 [2019-02-04T16:26:25.896+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549293985896] [levelValue: 800] [[
   tp3q1 was successfully deployed in 139 milliseconds.]]
 
+[2019-02-04T16:31:13.443+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549294273443] [levelValue: 800] [[
+  GUI deployment: uploadToTempfile]]
+
+[2019-02-04T16:31:13.444+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549294273444] [levelValue: 800] [[
+  uploadFileName=tp1.q1.war]]
+
+[2019-02-04T16:31:13.447+0100] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=44 _ThreadName=Thread-8] [timeMillis: 1549294273447] [levelValue: 800] [[
+  ================== availabilityEnabled  skipped ]]
+
+[2019-02-04T16:31:13.462+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549294273462] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:31:13.491+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549294273491] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:31:13.492+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549294273492] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-02-04T16:31:13.548+0100] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549294273548] [levelValue: 800] [[
+  Loading application [tp1.q1] at [/tp1]]]
+
+[2019-02-04T16:31:13.565+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=43 _ThreadName=admin-listener(1)] [timeMillis: 1549294273565] [levelValue: 800] [[
+  tp1.q1 was successfully deployed in 113 milliseconds.]]
+
+[2019-02-04T16:31:13.566+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=44 _ThreadName=admin-listener(2)] [timeMillis: 1549294273566] [levelValue: 800] [[
+  Deleting the file uploaded to Temp Directory]]
+
+[2019-02-04T16:31:34.600+0100] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=44 _ThreadName=Thread-8] [timeMillis: 1549294294600] [levelValue: 800] [[
+  com.sun.webui.jsf.component.DropDown::The current value of component propertyForm:deployTable:topActionsGroup1:filter does not match any of the selections. 
+Did you forget to reset the value after changing the options? ]]
+
+[2019-02-05T12:18:41.824+0100] [glassfish 5.0] [SEVERE] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=804 _ThreadName=admin-listener(10)] [timeMillis: 1549365521824] [levelValue: 1000] [[
+  The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 135786214035069526348186531221551781468391756233528066061569654028671100866720352830303278016129003918213826297308054231261658522889438712013757624116391437358730449661353175673177742307421061340003741057138887918110217006515773038453829253517076741780039735595086881329494037450587568122088113584549069375417
+  public exponent: 65537
+  Validity: [From: Sat Aug 22 18:41:51 CEST 1998,
+               To: Wed Aug 22 18:41:51 CEST 2018]
+  Issuer: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  SerialNumber: [    35def4cf]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.2.840.113533.7.65.0 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 0D 30 0B 1B 05 56 33   2E 30 63 03 02 06 C0     ..0...V3.0c....
+
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [CN=CRL1, OU=Equifax Secure Certificate Authority, O=Equifax, C=US]
+]]
+
+[5]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[6]: ObjectId: 2.5.29.16 Criticality=false
+PrivateKeyUsage: [
+To: Wed Aug 22 18:41:51 CEST 2018]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 58 CE 29 EA FC F7 DE B5   CE 02 B9 17 B5 85 D1 B9  X.).............
+0010: E3 E0 95 CC 25 31 0D 00   A6 92 6E 7F B6 92 63 9E  ....%1....n...c.
+0020: 50 95 D1 9A 6F E4 11 DE   63 85 6E 98 EE A8 FF 5A  P...o...c.n....Z
+0030: C8 D3 55 B2 66 71 57 DE   C0 21 EB 3D 2A A7 23 49  ..U.fqW..!.=*.#I
+0040: 01 04 86 42 7B FC EE 7F   A2 16 52 B5 67 67 D3 40  ...B......R.gg.@
+0050: DB 3B 26 58 B2 28 77 3D   AE 14 77 61 D6 FA 2A 66  .;&X.(w=..wa..*f
+0060: 27 A0 0D FA A7 73 5C EA   70 F1 94 21 65 44 5F FA  '....s\.p..!eD_.
+0070: FC EF 29 68 A9 A2 87 79   EF 79 EF 4F AC 07 77 38  ..)h...y.y.O..w8
+
+]]]
+
+[2019-02-05T12:18:41.828+0100] [glassfish 5.0] [SEVERE] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=804 _ThreadName=admin-listener(10)] [timeMillis: 1549365521828] [levelValue: 1000] [[
+  The SSL certificate has expired: [
+[
+  Version: V1
+  Subject: CN=GTE CyberTrust Global Root, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 104674226241368487598835828377585222181792546532354327780214427055917513664449991602803276678454577364904540367827644455215731003386468752240014232146814457308076052176227490263634768927290191763858631579785604655038492469791381988347440106477066514204303723029602991655085187937840556671697442212352844587673
+  public exponent: 65537
+  Validity: [From: Thu Aug 13 02:29:00 CEST 1998,
+               To: Tue Aug 14 01:59:00 CEST 2018]
+  Issuer: CN=GTE CyberTrust Global Root, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01a5]
+
+]
+  Algorithm: [MD5withRSA]
+  Signature:
+0000: 6D EB 1B 09 E9 5E D9 51   DB 67 22 61 A4 2A 3C 48  m....^.Q.g"a.*<H
+0010: 77 E3 A0 7C A6 DE 73 A2   14 03 85 3D FB AB 0E 30  w.....s....=...0
+0020: C5 83 16 33 81 13 08 9E   7B 34 4E DF 40 C8 74 D7  ...3.....4N.@.t.
+0030: B9 7D DC F4 76 55 7D 9B   63 54 18 E9 F0 EA F3 5C  ....vU..cT.....\
+0040: B1 D9 8B 42 1E B9 C0 95   4E BA FA D5 E2 7C F5 68  ...B....N......h
+0050: 61 BF 8E EC 05 97 5F 5B   B0 D7 A3 85 34 C4 24 A7  a....._[....4.$.
+0060: 0D 0F 95 93 EF CB 94 D8   9E 1F 9D 5C 85 6D C7 AA  ...........\.m..
+0070: AE 4F 1F 22 B5 CD 95 AD   BA A7 CC F9 AB 0B 7A 7F  .O."..........z.
+
+]]]
+
+[2019-02-05T12:18:41.923+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=804 _ThreadName=admin-listener(10)] [timeMillis: 1549365521923] [levelValue: 800] [[
+  Redirecting to /]]
+
+[2019-02-05T12:18:41.964+0100] [glassfish 5.0] [INFO] [] [org.glassfish.admingui] [tid: _ThreadID=47 _ThreadName=admin-listener(5)] [timeMillis: 1549365521964] [levelValue: 800] [[
+  Admin Console: Initializing Session Attributes...]]
+
