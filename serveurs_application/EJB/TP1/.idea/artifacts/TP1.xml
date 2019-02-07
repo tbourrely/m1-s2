@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" build-on-make="true" name="TP1">
+    <output-path>$PROJECT_DIR$/out/artifacts/TP1</output-path>
+    <root id="archive" name="TP1.jar">
+      <element id="javaee-facet-resources" facet="TP1/ejb/EJB" />
+      <element id="module-output" name="TP1" />
+    </root>
+  </artifact>
+</component>

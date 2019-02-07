@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jndi-properties">
+    <CLASSES>
+      <root url="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/lib/jndi-properties.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/lib/jndi-properties.jar!/" recursive="false" />
+  </library>
+</component>

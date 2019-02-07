@@ -22,6 +22,9 @@ public class HelloWorld extends HttpServlet {
     }
 
     public static Cookie getCookie(Cookie[] cookies, String cookieName) {
+        if (null == cookies)
+            return null;
+
         for(int i = 0; i < cookies.length; i++) {
             if(cookieName.equals(cookies[i].getName()))
                 return cookies[i];
