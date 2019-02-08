@@ -17450,3 +17450,6 @@ Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violate
 [2019-02-08T11:30:51.253+0100] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=44 _ThreadName=admin-listener(3)] [timeMillis: 1549621851253] [levelValue: 800] [[
   TP1 was successfully deployed in 762 milliseconds.]]
 
+[2019-02-08T11:32:34.460+0100] [glassfish 5.0] [INFO] [] [org.eclipse.persistence.session./file:/Users/thomasbourrely/Documents/m1-s2/serveurs_application/domains/domain1/applications/TP1/_EjbComponentPU.connection] [tid: _ThreadID=45 _ThreadName=admin-listener(4)] [timeMillis: 1549621954460] [levelValue: 800] [[
+  /file:/Users/thomasbourrely/Documents/m1-s2/serveurs_application/domains/domain1/applications/TP1/_EjbComponentPU logout successful]]
+

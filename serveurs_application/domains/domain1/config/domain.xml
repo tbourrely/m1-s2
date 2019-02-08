@@ -70,7 +70,6 @@
   <servers>
     <server config-ref="server-config" name="server">
       <application-ref ref="__admingui" virtual-servers="__asadmin"></application-ref>
-      <application-ref ref="TP1" virtual-servers="server"></application-ref>
       <resource-ref ref="jdbc/__TimerPool"></resource-ref>
       <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="jms/__defaultConnectionFactory"></resource-ref>
@@ -471,19 +470,5 @@
     <secure-admin-principal dn="CN=pandoraMachine-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
   </secure-admin>
   <clusters></clusters>
-  <applications>
-    <application object-type="user" name="TP1" location="${com.sun.aas.instanceRootURI}/applications/TP1/">
-      <property name="archiveType" value="ejb"></property>
-      <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/TP1/TP1.jar"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="101555618196815872"></property>
-      <property name="org.glassfish.persistence.app_name_property" value="TP1"></property>
-      <property name="defaultAppName" value="TP1"></property>
-      <module name="TP1">
-        <engine sniffer="ejb"></engine>
-        <engine sniffer="security"></engine>
-        <engine sniffer="weld"></engine>
-        <engine sniffer="jpa"></engine>
-      </module>
-    </application>
-  </applications>
+  <applications></applications>
 </domain>

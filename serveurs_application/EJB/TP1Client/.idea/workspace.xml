@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05f99004-dee5-46f0-8c89-6177aebc50ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../TP1/src/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/entities/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/stateless/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/stateless/BookManagerBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/TP1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1/TP1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/TP1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TP1Client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/__internal/tp3q1/tp3q34166489613384626637.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/details.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/page1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/userdata.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/local-password" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/details_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/edit_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/index_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/policy/tp3q1/tp3q1/granted.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/logs/server/tx/recoveryfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/logs/server/tx/recoveryfile" afterDir="false" />
-    </list>
+    <list default="true" id="05f99004-dee5-46f0-8c89-6177aebc50ba" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,12 +175,12 @@
       <workItem from="1549540835349" duration="1080000" />
       <workItem from="1549542832111" duration="453000" />
       <workItem from="1549543393791" duration="1267000" />
-      <workItem from="1549616403002" duration="3440000" />
+      <workItem from="1549616403002" duration="3692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11175000" />
+    <option name="totallyTimeSpent" value="11427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />

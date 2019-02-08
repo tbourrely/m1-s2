@@ -6,36 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36bcf001-4a62-4517-a670-7af2639d0635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateless/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stateless/BookManagerBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1Client/.idea/libraries/TP1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1Client/src/BookClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TP1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1Client/TP1Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1Client/TP1Client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/__internal/tp3q1/tp3q34166489613384626637.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/details.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/page1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/userdata.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/local-password" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/details_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/edit_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/index_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/policy/tp3q1/tp3q1/granted.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/logs/server/tx/recoveryfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/logs/server/tx/recoveryfile" afterDir="false" />
-    </list>
+    <list default="true" id="36bcf001-4a62-4517-a670-7af2639d0635" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state relative-caret-position="156">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1135#1136#0" expanded="true" />
@@ -295,12 +266,12 @@
       <workItem from="1549540836184" duration="1748000" />
       <workItem from="1549542823827" duration="461000" />
       <workItem from="1549543392365" duration="1750000" />
-      <workItem from="1549613037520" duration="6122000" />
+      <workItem from="1549613037520" duration="6375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16117000" />
+    <option name="totallyTimeSpent" value="16370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -426,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        <state relative-caret-position="156">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1135#1136#0" expanded="true" />
