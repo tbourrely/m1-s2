@@ -2,32 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05f99004-dee5-46f0-8c89-6177aebc50ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../TP1/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/stateful/SalutStateful.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/stateful/SalutStatefulBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/stateless/Salut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP1/src/stateless/SalutBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/derbyclient.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gf_client.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jndi_properties.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP1Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TP2SA/question3/HelloWorld/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP2SA/question3/HelloWorld/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../TP2SA/question3/tp2.q3.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP2SA/question3/tp2.q3.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP1/src/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP1/src/entities/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP1/src/stateless/BookManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP1/src/stateless/BookManagerBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/TP1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP1/TP1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1/TP1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TP1Client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/__internal/tp3q1/tp3q34166489613384626637.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/details.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/page1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/applications/tp3q1/userdata.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/local-password" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/details_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/edit_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/jsp/tp3q1/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/generated/policy/tp3q1/tp3q1/granted.policy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../domains/domain1/logs/server/tx/recoveryfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/logs/server/tx/recoveryfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,14 +40,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="75">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1549544092756" expanded="true" signature="156:633" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BookClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,6 +74,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TP1.jar</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
@@ -68,10 +87,18 @@
       <list>
         <option value="$PROJECT_DIR$/jndi.properties" />
         <option value="$PROJECT_DIR$/src/Client.java" />
+        <option value="$PROJECT_DIR$/src/BookClient.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -81,6 +108,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +136,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -120,7 +147,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,7 +166,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BookClient">
+    <configuration name="BookClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BookClient" />
+      <module name="TP1Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="TP1Client" />
@@ -144,6 +183,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BookClient" />
         <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
@@ -164,24 +204,25 @@
       <workItem from="1549540835349" duration="1080000" />
       <workItem from="1549542832111" duration="453000" />
       <workItem from="1549543393791" duration="1267000" />
+      <workItem from="1549616403002" duration="3440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7735000" />
+    <option name="totallyTimeSpent" value="11175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40222773" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39156628" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39975247" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -215,13 +256,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jndi.properties" />
-    <entry file="file://$PROJECT_DIR$/TP1Client.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar!/sun/nio/ch/Net.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -229,13 +263,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TP1Client.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="75">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1549544092756" expanded="true" signature="156:633" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BookClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

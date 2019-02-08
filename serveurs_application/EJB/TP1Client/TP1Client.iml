@@ -7,15 +7,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="library" exported="" name="GlassFish 5.0.0" level="application_server_libraries" />
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../TP1/out/artifacts/TP1/TP1.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/TP1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="GlassFish 5.0.0" level="application_server_libraries" />
   </component>
 </module>
