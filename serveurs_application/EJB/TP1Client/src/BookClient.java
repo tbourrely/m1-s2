@@ -1,4 +1,3 @@
-import entities.Book;
 import stateless.BookManager;
 
 import javax.naming.InitialContext;
