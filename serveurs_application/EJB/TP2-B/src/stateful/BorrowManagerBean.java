@@ -1,8 +1,8 @@
 package stateful;
 
-import entities.Book;
-import entities.Borrow;
-import entities.Borrower;
+import TP2.entities.Book;
+import TP2.entities.Borrow;
+import TP2.entities.Borrower;
 
 import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
