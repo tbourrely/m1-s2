@@ -2,38 +2,39 @@ import javax.jms.*;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-public class Receiver {
+public class sender {
     public static void main(String[] args)
     {
 
-        int sleepTime = Integer.parseInt(args[0]);
-        String name = args[1];
+        String message = args[0];
+        String recipient = args.length != 2 ? null : args[1]; 
 
         try {
             InitialContext messaging = new InitialContext();
             QueueConnectionFactory connectionFactory = (QueueConnectionFactory)
-                    messaging.lookup("jms/TPConnectionFactory");
+            messaging.lookup("jms/TPConnectionFactory");
             Queue queue = (Queue) messaging.lookup("jms/TPDestination");
             QueueConnection connection = connectionFactory.createQueueConnection();
             QueueSession session = connection.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
             connection.start();
+            QueueSender queueSender = session.createSender(queue);
 
-            QueueReceiver queueReceiver = session.createReceiver(queue);
-            TextMessage textMessage = (TextMessage)queueReceiver.receive();
+            TextMessage textMessage = session.createTextMessage();
+            textMessage.setText(message);
+            
+            if (recipient != null) {
+               textMessage.setStringProperty("destinataire", recipient);
+            } 
 
-            System.out.println(name);
-            System.out.println(textMessage.getText());
-            System.out.println("Sleeping for : " + Integer.toString(sleepTime));
-            Thread.sleep(sleepTime);
+            queueSender.send(textMessage);
+
+            System.out.println("message envoye");
 
             connection.close();
             System.exit(0);
-
         } catch(NamingException e) {
             e.printStackTrace();
         } catch (JMSException e) {
-            e.printStackTrace();
-        } catch(InterruptedException e) {
             e.printStackTrace();
         }
     }

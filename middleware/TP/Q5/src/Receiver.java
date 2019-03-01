@@ -6,25 +6,37 @@ public class Receiver {
     public static void main(String[] args)
     {
 
-        int sleepTime = Integer.parseInt(args[0]);
-        String name = args[1];
-
         try {
             InitialContext messaging = new InitialContext();
             QueueConnectionFactory connectionFactory = (QueueConnectionFactory)
                     messaging.lookup("jms/TPConnectionFactory");
             Queue queue = (Queue) messaging.lookup("jms/TPDestination");
             QueueConnection connection = connectionFactory.createQueueConnection();
-            QueueSession session = connection.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
+            QueueSession session = connection.createQueueSession(false, Session.CLIENT_ACKNOWLEDGE);
             connection.start();
 
-            QueueReceiver queueReceiver = session.createReceiver(queue);
+            QueueReceiver queueReceiver = null;
+
+            if (args.length == 0) {
+              queueReceiver = session.createReceiver(queue);
+            } else {
+              String filter = "";
+              for (int i = 0; i<args.length; i++) {
+                filter += "destinataire='" + args[i] + "'";
+                
+                if ((i+1) < args.length) {
+                  filter += " OR ";
+                }
+              }
+
+              queueReceiver = session.createReceiver(queue, filter);
+            }
+
             TextMessage textMessage = (TextMessage)queueReceiver.receive();
 
-            System.out.println(name);
             System.out.println(textMessage.getText());
-            System.out.println("Sleeping for : " + Integer.toString(sleepTime));
-            Thread.sleep(sleepTime);
+
+            textMessage.acknowledge();
 
             connection.close();
             System.exit(0);
@@ -33,8 +45,6 @@ public class Receiver {
             e.printStackTrace();
         } catch (JMSException e) {
             e.printStackTrace();
-        } catch(InterruptedException e) {
-            e.printStackTrace();
-        }
+        }     
     }
 }
