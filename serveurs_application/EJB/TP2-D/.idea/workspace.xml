@@ -9,13 +9,16 @@
     <list default="true" id="547c124a-b851-4ab2-826c-1ec8cd751ab5" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../TP1Client/src/TP2ClientC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP2-C/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/EmprunteurInvalide.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/LivreDejaEmprunte.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/NbMaxEmpruntsAtteint.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP2-C/src/stateless/InfosBook.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP2-C/src/stateless/InfosBookBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/ejb-jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2-B/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2-B/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TP2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pdfs/TP2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../pdfs/TP2.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/local-password" afterDir="false" />
@@ -79,11 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManagerBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="210">
+              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,11 +94,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManagerBean.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/ejb-jar.xml">
+          <provider editor-type-id="com.intellij.javaee.module.components.TransactionAttributesEditorProvider" />
+          <provider editor-type-id="com.intellij.javaee.module.components.MethodPermissionsEditorProvider" />
+          <provider editor-type-id="com.intellij.javaee.module.components.EjbModuleGeneralEditorProvider" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="135">
+              <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -105,8 +111,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -121,15 +127,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/stateful/BorrowManager.java" />
         <option value="$PROJECT_DIR$/src/entities/Book.java" />
-        <option value="$PROJECT_DIR$/src/stateless/InfosBookBean.java" />
         <option value="$PROJECT_DIR$/src/stateless/InfosBook.java" />
         <option value="$PROJECT_DIR$/src/entities/Borrow.java" />
         <option value="$PROJECT_DIR$/src/entities/Borrower.java" />
         <option value="$PROJECT_DIR$/src/stateless/BookManager.java" />
         <option value="$PROJECT_DIR$/src/stateless/BookManagerBean.java" />
+        <option value="$PROJECT_DIR$/src/customExceptions/NbMaxEmpruntsAtteint.java" />
+        <option value="$PROJECT_DIR$/src/customExceptions/LivreDejaEmprunte.java" />
+        <option value="$PROJECT_DIR$/src/stateless/InfosBookBean.java" />
+        <option value="$PROJECT_DIR$/src/customExceptions/EmprunteurInvalide.java" />
+        <option value="$PROJECT_DIR$/src/stateful/BorrowManager.java" />
         <option value="$PROJECT_DIR$/src/stateful/BorrowManagerBean.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/ejb-jar.xml" />
       </list>
     </option>
   </component>
@@ -141,8 +151,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="1280" />
+    <option name="y" value="-174" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,49 +167,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
+              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="TP2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
+              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
+              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stateful" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP2-B" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-B" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stateless" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -213,7 +195,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -322,7 +304,8 @@
       <workItem from="1551079824248" duration="12434000" />
       <workItem from="1551191125117" duration="18000" />
       <workItem from="1551432280154" duration="4696000" />
-      <workItem from="1551522107929" duration="30000" />
+      <workItem from="1551518895520" duration="3547000" />
+      <workItem from="1551525525219" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="TP2 - Q1">
       <created>1551110230095</created>
@@ -335,22 +318,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18579000" />
+    <option name="totallyTimeSpent" value="22772000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="1280" y="-174" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49262536" visible="true" weight="0.26979" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49115044" visible="true" weight="0.17944622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" weight="0.3297568" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.50737464" side_tool="true" weight="0.17625134" />
-      <window_info id="EJB" order="6" sideWeight="0.50737464" side_tool="true" weight="0.17625134" />
+      <window_info id="EJB" order="6" sideWeight="0.50884956" side_tool="true" weight="0.17784877" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45479453" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32871288" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -393,16 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/Borrower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -436,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/InfosBookBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stateless/InfosBook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -450,41 +416,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/customExceptions/LivreDejaEmprunte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/customExceptions/NbMaxEmpruntsAtteint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/corba/se/idl/InvalidArgument.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/stateless/BookManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateless/InfosBookBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/customExceptions/EmprunteurInvalide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="51" lean-forward="true" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManagerBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/ejb-jar.xml">
+      <provider editor-type-id="com.intellij.javaee.module.components.EjbModuleGeneralEditorProvider" />
+      <provider editor-type-id="com.intellij.javaee.module.components.TransactionAttributesEditorProvider" />
+      <provider editor-type-id="com.intellij.javaee.module.components.MethodPermissionsEditorProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="66" lean-forward="true" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
         </state>
       </provider>
     </entry>
