@@ -8,12 +8,12 @@ public class TP2Client {
         try {
             InitialContext initialContext = new InitialContext();
             BorrowManager bm = (BorrowManager)initialContext.lookup("stateful.BorrowManager");
-            bm.createBorrow(1);
-            bm.borrowBook("666");
-            bm.returnBook("666");
-            bm.createBorrow(2);
-            bm.borrowBook("666");
-            System.out.println("go check db");
+//            bm.createBorrow(1);
+//            bm.borrowBook("666");
+//            bm.returnBook("666");
+//            bm.createBorrow(2);
+//            bm.borrowBook("666");
+//            System.out.println("go check db");
         } catch (NamingException e) {
             e.printStackTrace();
         }

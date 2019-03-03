@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="TP2" />
+      <artifact name="TP32" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="547c124a-b851-4ab2-826c-1ec8cd751ab5" name="Default Changelist" comment="">
+    <list default="true" id="7052ec94-ce93-466f-8bd6-832d5bb7692c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../TP1Client/src/TP3Client1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP1Client/src/TP3Client2.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/artifacts/TP31.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/dataSources.local.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/dataSources.xml" afterDir="false" />
@@ -23,10 +24,12 @@
       <change afterPath="$PROJECT_DIR$/../TP3-1/src/TP31/entities/Livre.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP3-1/src/TP31/stateless/GestionLivre.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TP3-1/src/TP31/stateless/GestionLivreBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TP32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TP32/entities/Auteur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TP1Client/.idea/libraries/TPjars.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1Client/.idea/libraries/TPjars.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TP1Client/src/TP2Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1Client/src/TP2Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2-D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2-D/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/local-password" afterDir="false" />
@@ -54,61 +57,88 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="etdsn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="coursSN@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="etdsn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="coursSN@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="etdsn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="coursSN@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="coursSN: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="etdsn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="coursSN@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="coursSN: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="etdsn@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="coursSN@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="coursSN: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="etdsn: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="coursSN@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="coursSN: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="etdsn: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="auteur: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="coursSN@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="coursSN: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="etdsn: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="livre_tp32: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
     </expand>
     <select />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="TP2-B" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TP32/entities/Livre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TP32/entities/Auteur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
+        <entry file="file://$PROJECT_DIR$/src/TP32/stateless/GestionLivreBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stateless/BookManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="150">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,10 +147,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
+        <entry file="file://$PROJECT_DIR$/src/TP32/stateless/GestionLivre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="120">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -135,38 +165,30 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>explo</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/entities/Book.java" />
-        <option value="$PROJECT_DIR$/src/stateless/InfosBook.java" />
-        <option value="$PROJECT_DIR$/src/entities/Borrow.java" />
-        <option value="$PROJECT_DIR$/src/entities/Borrower.java" />
-        <option value="$PROJECT_DIR$/src/stateless/BookManager.java" />
-        <option value="$PROJECT_DIR$/src/stateless/BookManagerBean.java" />
-        <option value="$PROJECT_DIR$/src/customExceptions/NbMaxEmpruntsAtteint.java" />
-        <option value="$PROJECT_DIR$/src/customExceptions/LivreDejaEmprunte.java" />
-        <option value="$PROJECT_DIR$/src/stateless/InfosBookBean.java" />
-        <option value="$PROJECT_DIR$/src/customExceptions/EmprunteurInvalide.java" />
-        <option value="$PROJECT_DIR$/src/stateful/BorrowManager.java" />
-        <option value="$PROJECT_DIR$/src/stateful/BorrowManagerBean.java" />
-        <option value="$PROJECT_DIR$/src/META-INF/ejb-jar.xml" />
+        <option value="$PROJECT_DIR$/src/TP3/entities/DetailsLivre.java" />
+        <option value="$PROJECT_DIR$/src/TP3/entities/Livre.java" />
+        <option value="$PROJECT_DIR$/src/TP3/stateless/GestionLivre.java" />
+        <option value="$PROJECT_DIR$/src/TP3/stateless/GestionLivreBean.java" />
+        <option value="$PROJECT_DIR$/src/TP31/entities/Livre.java" />
+        <option value="$PROJECT_DIR$/src/TP31/stateless/GestionLivreBean.java" />
+        <option value="$PROJECT_DIR$/src/TP32/entities/Auteur.java" />
+        <option value="$PROJECT_DIR$/src/TP32/stateless/GestionLivre.java" />
+        <option value="$PROJECT_DIR$/src/TP32/entities/Livre.java" />
+        <option value="$PROJECT_DIR$/src/TP32/stateless/GestionLivreBean.java" />
       </list>
     </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
@@ -175,7 +197,9 @@
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -186,48 +210,50 @@
         <subPane>
           <expand>
             <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="TP2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="TP32" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TP32" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TP32" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
+              <item name="TP3-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP3-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP2-D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP2-D" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TP32" type="462c0819:PsiDirectoryNode" />
               <item name="stateless" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -244,10 +270,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -270,7 +295,7 @@
     <configuration name="GlassFish 5.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <deployment>
-        <artifact name="TP2">
+        <artifact name="TP32">
           <settings />
         </artifact>
       </deployment>
@@ -334,7 +359,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="TP2" />
+          <artifact name="TP32" />
         </option>
       </method>
     </configuration>
@@ -344,59 +369,46 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="547c124a-b851-4ab2-826c-1ec8cd751ab5" name="Default Changelist" comment="" />
-      <created>1549623204882</created>
+      <changelist id="7052ec94-ce93-466f-8bd6-832d5bb7692c" name="Default Changelist" comment="" />
+      <created>1551620407973</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1549623204882</updated>
-      <workItem from="1549623206275" duration="1401000" />
-      <workItem from="1551079824248" duration="12434000" />
-      <workItem from="1551191125117" duration="18000" />
-      <workItem from="1551432280154" duration="4696000" />
-      <workItem from="1551518895520" duration="3547000" />
-      <workItem from="1551525525219" duration="676000" />
-      <workItem from="1551620276611" duration="1354000" />
-      <workItem from="1551622245262" duration="967000" />
+      <updated>1551620407973</updated>
+      <workItem from="1551620409386" duration="2865000" />
+      <workItem from="1551623386574" duration="1415000" />
+      <workItem from="1551625352622" duration="935000" />
     </task>
-    <task id="LOCAL-00001" summary="TP2 - Q1">
-      <created>1551110230095</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1551110230095</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25093000" />
+    <option name="totallyTimeSpent" value="5215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-174" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940594" visible="true" weight="0.18104367" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6011817" visible="true" weight="0.2550586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="Persistence" order="3" sideWeight="0.5059406" side_tool="true" weight="0.18104367" />
+      <window_info id="Persistence" order="3" sideWeight="0.3988183" side_tool="true" weight="0.24973376" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.50737464" side_tool="true" weight="0.17625134" />
-      <window_info id="EJB" order="6" sideWeight="0.50884956" side_tool="true" weight="0.17784877" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="EJB" order="6" sideWeight="0.3988183" side_tool="true" weight="0.24973376" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32871288" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32970297" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32920793" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32891566" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32891566" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32970297" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -412,164 +424,56 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="TP2 - Q1" />
-    <option name="LAST_COMMIT_MESSAGE" value="TP2 - Q1" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a27d5c33-228d-4b58-b0a4-9b8c57d0bc34/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/META-INF/ejb-jar.xml" />
+    <entry file="file://$PROJECT_DIR$/src/TP32/entities/DetailsLivre.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/TP3-1/META-INF/persistence.xml" />
+    <entry file="file://$PROJECT_DIR$/out/production/TP3-1/META-INF/MANIFEST.MF" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c34459b5-f88b-4783-92b5-cc181d036f77/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TP2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Borrower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Borrow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/InfosBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/customExceptions/LivreDejaEmprunte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/customExceptions/NbMaxEmpruntsAtteint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/corba/se/idl/InvalidArgument.class">
+    <entry file="file://$PROJECT_DIR$/TP3-2.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/InfosBookBean.java">
+    <entry file="file://$PROJECT_DIR$/src/TP32/entities/Auteur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/customExceptions/EmprunteurInvalide.java">
+    <entry file="file://$PROJECT_DIR$/src/TP32/entities/Livre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="51" lean-forward="true" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state relative-caret-position="300">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManagerBean.java">
+    <entry file="file://$PROJECT_DIR$/src/TP32/stateless/GestionLivre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="120">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TP32/stateless/GestionLivreBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/ejb-jar.xml">
-      <provider editor-type-id="com.intellij.javaee.module.components.EjbModuleGeneralEditorProvider" />
-      <provider editor-type-id="com.intellij.javaee.module.components.MethodPermissionsEditorProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.components.TransactionAttributesEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/BookManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -580,7 +484,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>TP2</last-edited>
+          <last-edited>TP32</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -593,7 +497,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA (TP2)|JPA</last-edited>
+          <last-edited>EJB</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -629,7 +533,19 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA|TP2</last-edited>
+          <last-edited>TP3-2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

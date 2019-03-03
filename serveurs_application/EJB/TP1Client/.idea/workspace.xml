@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05f99004-dee5-46f0-8c89-6177aebc50ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TP2ClientC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/EmprunteurInvalide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/LivreDejaEmprunte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/NbMaxEmpruntsAtteint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/stateless/InfosBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/stateless/InfosBookBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-D/src/META-INF/ejb-jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TP3Client1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TP3Client2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/artifacts/TP31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/TP3-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/src/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/src/TP31/entities/DetailsLivre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/src/TP31/entities/Livre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/src/TP31/stateless/GestionLivre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-1/src/TP31/stateless/GestionLivreBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-2/.idea/artifacts/TP32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP3-2/src/TP32/entities/Auteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/TPjars.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/TPjars.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP2-B/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2-B/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pdfs/TP2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../pdfs/TP2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TP2Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TP2Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2-D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2-D/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/local-password" afterDir="false" />
@@ -30,13 +41,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TP2ClientC.java">
+        <entry file="file://$PROJECT_DIR$/src/TP3Client2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -64,9 +72,11 @@
         <option value="$PROJECT_DIR$/jndi.properties" />
         <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/BookClient.java" />
-        <option value="$PROJECT_DIR$/src/TP2Client.java" />
         <option value="$PROJECT_DIR$/src/TP2ClientB.java" />
         <option value="$PROJECT_DIR$/src/TP2ClientC.java" />
+        <option value="$PROJECT_DIR$/src/TP2Client.java" />
+        <option value="$PROJECT_DIR$/src/TP3Client1.java" />
+        <option value="$PROJECT_DIR$/src/TP3Client2.java" />
       </list>
     </option>
   </component>
@@ -89,6 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,8 +122,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,15 +135,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/unusedlibs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/unusedlibs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -148,21 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TP2ClientC">
-    <configuration name="BookClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BookClient" />
-      <module name="TP1Client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client" />
-      <module name="TP1Client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TP3Client2">
     <configuration name="TP2Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TP2Client" />
       <module name="TP1Client" />
@@ -184,13 +180,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TP3Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TP3Client1" />
+      <module name="TP1Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TP3Client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TP3Client2" />
+      <module name="TP1Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TP3Client2" />
+        <item itemvalue="Application.TP3Client1" />
         <item itemvalue="Application.TP2ClientC" />
         <item itemvalue="Application.TP2Client" />
         <item itemvalue="Application.TP2ClientB" />
-        <item itemvalue="Application.BookClient" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -215,24 +225,25 @@
       <workItem from="1551091504906" duration="22000" />
       <workItem from="1551093069468" duration="7496000" />
       <workItem from="1551432371904" duration="8749000" />
+      <workItem from="1551619935097" duration="4800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28043000" />
+    <option name="totallyTimeSpent" value="32843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-174" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18370607" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18530351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38019803" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.38019803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39975247" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -240,7 +251,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.38019803" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32871288" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
@@ -255,6 +266,37 @@
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" id="CDI" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18530351" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.38019803" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975247" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005325" side_tool="true" weight="0.38019803" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32871288" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="JSF" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="CDI" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -308,13 +350,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/TP2.jar!/entities/Book.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/TP2.jar!/entities/Book.class" />
     <entry file="file://$PROJECT_DIR$/src/BookClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -345,16 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TP2Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TP2ClientB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -365,13 +391,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TP2ClientC.java">
+    <entry file="file://$PROJECT_DIR$/src/TP2Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="75">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/modules/glassfish-corba-orb.jar!/com/sun/corba/ee/impl/javax/rmi/CORBA/Util.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/modules/glassfish-corba-orb.jar!/com/sun/corba/ee/impl/presentation/rmi/StubInvocationHandlerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TP2ClientC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/modules/glassfish-corba-orb.jar!/com/sun/corba/ee/impl/presentation/rmi/codegen/CodegenStubBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/modules/glassfish-corba-orb.jar!/com/sun/corba/ee/impl/encoding/CDRInputStream_1_0.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="646" selection-start-line="646" selection-end-line="646" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/modules/glassfish-corba-orb.jar!/com/sun/corba/ee/impl/encoding/CDRInputObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="375" selection-start-line="375" selection-end-line="375" />
+          <folding>
+            <element signature="e#12035#12036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/Cellar/glassfish/5.0/libexec/glassfish/modules/glassfish-corba-orb.jar!/com/sun/corba/ee/impl/io/IIOPInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="1485" selection-start-line="1485" selection-end-line="1485" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TP3Client1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TP3Client2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -404,6 +502,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>appserv-rt</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
