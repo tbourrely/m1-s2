@@ -475,7 +475,7 @@
     <application object-type="user" name="TP33" location="${com.sun.aas.instanceRootURI}/applications/TP33/">
       <property name="archiveType" value="ejb"></property>
       <property name="appLocation" value="${com.sun.aas.instanceRootURI}/applications/__internal/TP33/TP33.jar"></property>
-      <property name="org.glassfish.ejb.container.application_unique_id" value="101687574061776896"></property>
+      <property name="org.glassfish.ejb.container.application_unique_id" value="101693253910724608"></property>
       <property name="org.glassfish.persistence.app_name_property" value="TP33"></property>
       <property name="defaultAppName" value="TP33"></property>
       <module name="TP33">

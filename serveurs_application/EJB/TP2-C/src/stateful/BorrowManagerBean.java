@@ -3,7 +3,6 @@ package stateful;
 import TP2.entities.Book;
 import TP2.entities.Borrow;
 import TP2.entities.Borrower;
-import com.sun.tools.corba.se.idl.InvalidArgument;
 import customExceptions.EmprunteurInvalide;
 import customExceptions.LivreDejaEmprunte;
 import customExceptions.NbMaxEmpruntsAtteint;

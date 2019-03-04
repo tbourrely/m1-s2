@@ -28,10 +28,10 @@ public class Book implements Serializable {
     }
 
     public void borrow() {
-        this.dispo = 1;
+        this.dispo = 0;
     }
 
     public void unborrow() {
-        this.dispo = 0;
+        this.dispo = 1;
     }
 }
