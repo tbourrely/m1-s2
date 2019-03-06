@@ -7,20 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="547c124a-b851-4ab2-826c-1ec8cd751ab5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../TP1Client/src/TP2ClientC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/LivreDejaEmprunte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/customExceptions/NbMaxEmpruntsAtteint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/stateless/InfosBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TP2-C/src/stateless/InfosBookBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP1Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/domain.xml.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/local-password" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/local-password" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/config/pid.prev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../domains/domain1/logs/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP2-D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP2-D/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,11 +66,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,8 +81,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManagerBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="82">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/stateless/InfosBookBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,7 +154,7 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
@@ -150,7 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +217,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,6 +337,7 @@
       <workItem from="1551191125117" duration="18000" />
       <workItem from="1551432280154" duration="4696000" />
       <workItem from="1551522107929" duration="30000" />
+      <workItem from="1551717772812" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="TP2 - Q1">
       <created>1551110230095</created>
@@ -335,13 +350,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18579000" />
+    <option name="totallyTimeSpent" value="18611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49262536" visible="true" weight="0.26979" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49262536" visible="true" weight="0.2732475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" weight="0.3297568" />
@@ -436,13 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/InfosBookBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stateless/InfosBook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -457,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -474,7 +475,7 @@
     <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -483,8 +484,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stateful/BorrowManagerBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="82">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateless/BookManagerBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stateless/InfosBookBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
