@@ -1,0 +1,208 @@
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server version:        Apache Tomcat/7.0.59
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server built:          Jan 28 2015 15:51:10 UTC
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server number:         7.0.59.0
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: OS Name:               Mac OS X
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: OS Version:            10.14.3
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Architecture:          x86_64
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: JVM Version:           1.8.0_201-b09
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: JVM Vendor:            Oracle Corporation
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_BASE:         /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_HOME:         /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.util.logging.config.file=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59//conf/logging.properties
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.endorsed.dirs=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59//endorsed
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Dcatalina.base=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Dcatalina.home=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.io.tmpdir=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59//temp
+mars 06, 2019 6:03:00 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/thomasbourrely/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+mars 06, 2019 6:03:00 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:03:00 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 580 ms
+mars 06, 2019 6:03:00 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+mars 06, 2019 6:03:00 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.59
+mars 06, 2019 6:03:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/docs de l'application web
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/docs has finished in 313 ms
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/manager de l'application web
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/manager has finished in 88 ms
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/examples de l'application web
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/examples has finished in 316 ms
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/ROOT de l'application web
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/ROOT has finished in 40 ms
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/host-manager de l'application web
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/host-manager has finished in 41 ms
+mars 06, 2019 6:03:01 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:03:01 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:03:01 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 850 ms
+mars 06, 2019 6:03:40 PM org.apache.catalina.core.StandardServer await
+INFOS: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+mars 06, 2019 6:03:40 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:03:40 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:03:41 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service Catalina
+mars 06, 2019 6:03:41 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:03:41 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:03:41 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:03:41 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server version:        Apache Tomcat/7.0.59
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server built:          Jan 28 2015 15:51:10 UTC
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Server number:         7.0.59.0
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: OS Name:               Mac OS X
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: OS Version:            10.14.3
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Architecture:          x86_64
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: JVM Version:           1.8.0_201-b09
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: JVM Vendor:            Oracle Corporation
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_BASE:         /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_HOME:         /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.util.logging.config.file=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59//conf/logging.properties
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.endorsed.dirs=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59//endorsed
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Dcatalina.base=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Dcatalina.home=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Command line argument: -Djava.io.tmpdir=/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59//temp
+mars 06, 2019 6:04:42 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/thomasbourrely/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+mars 06, 2019 6:04:42 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:04:42 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 561 ms
+mars 06, 2019 6:04:42 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service Catalina
+mars 06, 2019 6:04:42 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.59
+mars 06, 2019 6:04:42 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Déploiement de l'archive /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/WebGoat-5.4.war de l'application web
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Deployment of web application archive /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/WebGoat-5.4.war has finished in 3 804 ms
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/docs de l'application web
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/docs has finished in 42 ms
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/manager de l'application web
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/manager has finished in 59 ms
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/examples de l'application web
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/examples has finished in 225 ms
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/ROOT de l'application web
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/ROOT has finished in 29 ms
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/host-manager de l'application web
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/host-manager has finished in 35 ms
+mars 06, 2019 6:04:46 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:04:46 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:04:46 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 4267 ms
+Wed Mar 06 18:04:58 CET 2019 | 0:0:0:0:0:0:0:1:0:0:0:0:0:0:0:1 | org.owasp.webgoat.lessons.HowToWork | []
+Wed Mar 06 18:05:02 CET 2019 | 0:0:0:0:0:0:0:1:0:0:0:0:0:0:0:1 | org.owasp.webgoat.lessons.HowToWork | [start=Start WebGoat]
+PATH: /Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/WebGoat-5.4/database
+Database Connection String: jdbc:hsqldb:mem:${USER}
+Successful connection to database
+Info - Could not drop user table
+Info - Could not drop user_login table
+Info - Could not drop pins table
+Info - Could not drop user admin table
+Info - Could not drop product table
+Info - Could not drop message database
+Info - Could not drop employee table
+Info - Could not drop roles table
+Info - Could not drop auth table
+Info - Could not drop ownership table
+Info - Could not drop weather table
+Info - Could not drop transactions table
+Info - Could not drop user_data_tan table
+Info - Could not drop tan table
+Info - Could not drop mfe_images table from database
+Info - Could not drop salaries table
+Success: creating tables.
+Wed Mar 06 18:05:18 CET 2019 | 0:0:0:0:0:0:0:1:0:0:0:0:0:0:0:1 | org.owasp.webgoat.lessons.AccessControlMatrix | [Screen=7,menu=200]
+Wed Mar 06 18:05:24 CET 2019 | 0:0:0:0:0:0:0:1:0:0:0:0:0:0:0:1 | org.owasp.webgoat.lessons.AccessControlMatrix | [Screen=7,menu=200,User=Moe,Resource=Public Share,SUBMIT=Check Access]
+Wed Mar 06 18:05:27 CET 2019 | 0:0:0:0:0:0:0:1:0:0:0:0:0:0:0:1 | org.owasp.webgoat.lessons.AccessControlMatrix | [Screen=7,menu=200,User=Curly,Resource=Public Share,SUBMIT=Check Access]
+Wed Mar 06 18:05:34 CET 2019 | 0:0:0:0:0:0:0:1:0:0:0:0:0:0:0:1 | org.owasp.webgoat.lessons.AccessControlMatrix | [Screen=7,menu=200,User=Curly,Resource=Performance Review,SUBMIT=Check Access]
+mars 06, 2019 6:05:39 PM org.apache.catalina.core.StandardServer await
+INFOS: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+mars 06, 2019 6:05:39 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:05:39 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:05:40 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service Catalina
+mars 06, 2019 6:05:40 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [/WebGoat-5.4] registered the JDBC driver [org.hsqldb.jdbcDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+mars 06, 2019 6:05:40 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:05:40 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["ajp-bio-8009"]
+mars 06, 2019 6:05:40 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+mars 06, 2019 6:05:40 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["ajp-bio-8009"]

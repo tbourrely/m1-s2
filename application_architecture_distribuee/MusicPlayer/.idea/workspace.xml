@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7dd89b56-7c43-4d56-ba8b-20f33c041d5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/theme/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q10/.idea/artifacts/Q9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q10/src/TraiteMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q10/src/TraiteMessageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q7/.idea/artifacts/Q7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q7/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q9/.idea/Q9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q9/.idea/artifacts/Q9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q9/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q9/src/ServletEmetteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q9/src/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../middleware/TP/Q9/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP2SA/.idea/TP2SA.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP2SA/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP2SA/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP2SA/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP2SA/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP2SA/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/.idea/TP3SA.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/question3/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/question3/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/question3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/question3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/question3/.idea/question3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/question3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../serveurs_application/TP3SA/question3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MusicPlayer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MusicPlayer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FlatListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FlatListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/LibraryScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/LibraryScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../middleware/TP/Q3/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../middleware/TP/Q3/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../middleware/TP/Q4/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../middleware/TP/Q4/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../middleware/TP/Q4/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../middleware/TP/Q4/src/sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../middleware/TP/Q5/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../middleware/TP/Q5/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../middleware/TP_JMS_2018.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../middleware/TP_JMS_2018.pdf" afterDir="false" />
-    </list>
+    <list default="true" id="7dd89b56-7c43-4d56-ba8b-20f33c041d5d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2533">
-              <caret line="149" column="87" selection-start-line="149" selection-start-column="87" selection-end-line="149" selection-end-column="87" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2480">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -199,12 +153,20 @@
       <workItem from="1549468281699" duration="2946000" />
       <workItem from="1549473718802" duration="1650000" />
       <workItem from="1551863132019" duration="7503000" />
-      <workItem from="1551965584447" duration="9158000" />
+      <workItem from="1551965584447" duration="9197000" />
     </task>
+    <task id="LOCAL-00001" summary="Player interface">
+      <created>1551977476640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551977476640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21373000" />
+    <option name="totallyTimeSpent" value="21412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -234,6 +196,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Player interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player interface" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/@expo/vector-icons/index.js">
@@ -331,11 +297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2533">
-          <caret line="149" column="87" selection-start-line="149" selection-start-column="87" selection-end-line="149" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2480">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
