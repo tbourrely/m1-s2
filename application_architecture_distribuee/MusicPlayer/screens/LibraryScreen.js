@@ -1,11 +1,12 @@
-import React                                    from 'react';
-import {ScrollView, StyleSheet, FlatList, Text} from 'react-native';
-import {ExpoLinksView}                          from '@expo/samples';
-import FlatListItem                             from './../components/FlatListItem';
+import React                                                            from 'react';
+import {ScrollView, StyleSheet, FlatList, View, Text, TouchableOpacity} from 'react-native';
+import FlatListItem                                                     from './../components/FlatListItem';
+import colors                                                           from './../theme/colors';
+import {MaterialIcons}                                                  from '@expo/vector-icons';
 
 export default class LibraryScreen extends React.Component {
     static navigationOptions = {
-        title: 'Library',
+        header: null,
     };
 
     _keyExtractor = (item, index) => item.id;
@@ -29,20 +30,38 @@ export default class LibraryScreen extends React.Component {
 
     render() {
         return (
-            <ScrollView style={styles.container}>
-                <FlatList
-                    data={this._data()}
-                    keyExtractor={this._keyExtractor}
-                    renderItem={this._renderItem}
-                />
-            </ScrollView>
+            <View style={{flex: 1}}>
+                <ScrollView style={styles.container}>
+                    <View style={styles.flatListWrapper}>
+                        <FlatList
+                            data={this._data()}
+                            keyExtractor={this._keyExtractor}
+                            renderItem={this._renderItem}
+                        />
+                    </View>
+                </ScrollView>
+
+                <TouchableOpacity style={styles.goToPlayerButton}
+                                  onPress={() => this.props.navigation.navigate('HomeStack')}>
+                    <MaterialIcons name='album' size={40} color={colors.playerIcon}/>
+                </TouchableOpacity>
+            </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
+    container       : {
         flex           : 1,
-        backgroundColor: 'rgb(250, 251, 252)'
+        backgroundColor: colors.appBackground,
     },
+    flatListWrapper : {
+        paddingTop   : 40,
+        paddingBottom: 20
+    },
+    goToPlayerButton: {
+        position: 'absolute',
+        bottom  : 10,
+        right   : 10
+    }
 });

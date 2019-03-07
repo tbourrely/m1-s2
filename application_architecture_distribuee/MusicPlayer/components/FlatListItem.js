@@ -1,5 +1,6 @@
 import React               from 'react';
 import {View, Text, Image} from "react-native";
+import colors              from './../theme/colors';
 
 export default class FlatListItem extends React.PureComponent {
 
@@ -22,10 +23,10 @@ export default class FlatListItem extends React.PureComponent {
                 </View>
 
                 <Text style={{
-                    marginLeft   : 30,
-                    fontSize     : 20,
-                    fontWeight   : 'bold',
-                    color        : '#011627',
+                    marginLeft: 30,
+                    fontSize  : 20,
+                    fontWeight: 'bold',
+                    color     : colors.playerText,
                 }}>
                     {this._capitalize(this.props.title)}
                 </Text>

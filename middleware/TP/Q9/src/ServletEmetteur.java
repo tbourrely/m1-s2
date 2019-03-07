@@ -1,15 +1,16 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
 import javax.jms.*;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-public class Receiver {
-    public static void main(String[] args)
-    {
-
-        int sleepTime = Integer.parseInt(args[0]);
-        String name = args[1];
+public class ServletEmetteur extends HttpServlet {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         try {
+            String text = request.getParameter("text");
+
             InitialContext messaging = new InitialContext();
             QueueConnectionFactory connectionFactory = (QueueConnectionFactory)
                     messaging.lookup("jms/TPConnectionFactory");
@@ -17,23 +18,20 @@ public class Receiver {
             QueueConnection connection = connectionFactory.createQueueConnection();
             QueueSession session = connection.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
             connection.start();
+            QueueSender queueSender = session.createSender(queue);
 
-            QueueReceiver queueReceiver = session.createReceiver(queue);
-            
-            while(1==1) {
-                TextMessage textMessage = (TextMessage)queueReceiver.receive();
+            TextMessage textMessage = session.createTextMessage();
+            textMessage.setText(text);
+            textMessage.setStringProperty("destinataire", "MY_MDB");
 
-            System.out.println(name);
-            System.out.println(textMessage.getText());
-            System.out.println("Sleeping for : " + Integer.toString(sleepTime));
-            Thread.sleep(sleepTime);
-            }
+            queueSender.send(textMessage);
+            connection.close();
 
+            PrintWriter out = response.getWriter();
+            out.println("Message envoyé");
         } catch(NamingException e) {
             e.printStackTrace();
         } catch (JMSException e) {
-            e.printStackTrace();
-        } catch(InterruptedException e) {
             e.printStackTrace();
         }
     }

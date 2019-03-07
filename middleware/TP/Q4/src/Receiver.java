@@ -23,22 +23,20 @@ public class Receiver {
             } else {
               String filter = "";
               for (int i = 0; i<args.length; i++) {
-                filter += "destinataire='" + args[i] + "'";
+                filter += "destinataire = '" + args[i] + "'";
                 
                 if ((i+1) < args.length) {
                   filter += " OR ";
                 }
               }
-
+              System.out.println("Filter : " + filter);
               queueReceiver = session.createReceiver(queue, filter);
             }
 
-            TextMessage textMessage = (TextMessage)queueReceiver.receive();
-
-            System.out.println(textMessage.getText());
-
-            connection.close();
-            System.exit(0);
+            while(1==1) {
+              TextMessage textMessage = (TextMessage)queueReceiver.receive();
+              System.out.println(textMessage.getText());
+            }
 
         } catch(NamingException e) {
             e.printStackTrace();

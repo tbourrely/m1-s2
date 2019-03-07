@@ -19,16 +19,30 @@ public class sender {
             connection.start();
             QueueSender queueSender = session.createSender(queue);
 
-            TextMessage textMessage = session.createTextMessage();
-            textMessage.setText(message);
+            for(int i = 0; i<5; i++) {
+                TextMessage textMessage = session.createTextMessage();
+                textMessage.setText(message+i);
+
+                queueSender.send(textMessage);
+
+                System.out.println("message envoye");
+            }
+
+            for(int i = 5; i<10; i++) {
+                TextMessage textMessage = session.createTextMessage();
             
-            if (recipient != null) {
-               textMessage.setStringProperty("destinataire", recipient);
-            } 
+                if (recipient != null) {
+                    System.out.println("Recipient : " + recipient);
+                    textMessage.setStringProperty("destinataire", recipient);
+                } 
+                
+                textMessage.setText(message+i);
 
-            queueSender.send(textMessage);
+                queueSender.send(textMessage);
 
-            System.out.println("message envoye");
+                System.out.println("message envoye");
+            }
+
 
             connection.close();
             System.exit(0);

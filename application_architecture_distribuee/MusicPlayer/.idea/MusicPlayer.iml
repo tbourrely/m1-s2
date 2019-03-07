@@ -7,5 +7,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@types/react-native" level="application" />
+    <orderEntry type="library" name="@types/expo" level="application" />
   </component>
 </module>

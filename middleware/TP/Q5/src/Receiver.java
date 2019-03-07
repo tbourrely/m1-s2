@@ -36,6 +36,8 @@ public class Receiver {
 
             System.out.println(textMessage.getText());
 
+            System.out.println("Waiting before acknowledge");
+            Thread.sleep(1000);
             textMessage.acknowledge();
 
             connection.close();
@@ -45,6 +47,9 @@ public class Receiver {
             e.printStackTrace();
         } catch (JMSException e) {
             e.printStackTrace();
-        }     
+        }  
+    catch(InterruptedException e) {
+        e.printStackTrace();
+    }   
     }
 }

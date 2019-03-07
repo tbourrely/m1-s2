@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Q9">
+    <output-path>$PROJECT_DIR$/out/artifacts/Q9</output-path>
+    <root id="archive" name="Q9.jar">
+      <element id="javaee-facet-resources" facet="Q7/ejb/EJB" />
+      <element id="module-output" name="Q7" />
+    </root>
+  </artifact>
+</component>
