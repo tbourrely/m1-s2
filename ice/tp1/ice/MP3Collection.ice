@@ -2,7 +2,7 @@
 
 module MP3Collection
 {
-    struct Track {
+    class Track {
         string artist;
         string name;
         string year;
@@ -11,7 +11,7 @@ module MP3Collection
 
     interface Collection
     {
-        string search(string key, string value);
+        Track search(string key, string value);
         void add(Track track);
         void remove(Track track);
     }

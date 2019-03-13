@@ -44,10 +44,9 @@ with Ice.initialize(sys.argv) as communicator:
         result = collection.search('name', name)
 
         if result != 'None':
-            track = json.loads(result)
-            print("Artist : " + track.get('artist'))
-            print("Name : " + track.get('name'))
-            print("Year : " + track.get('year'))
-            print("File : " + track.get('file'))
+            print("Artist : " + result.artist)
+            print("Name : " + result.name)
+            print("Year : " + result.year)
+            print("File : " + result.file)
         else :
             print("No match found")

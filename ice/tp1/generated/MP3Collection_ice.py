@@ -23,114 +23,32 @@ __name__ = 'MP3Collection'
 
 if 'Track' not in _M_MP3Collection.__dict__:
     _M_MP3Collection.Track = Ice.createTempClass()
-    class Track(object):
+    class Track(Ice.Value):
         def __init__(self, artist='', name='', year='', file=''):
             self.artist = artist
             self.name = name
             self.year = year
             self.file = file
 
-        def __hash__(self):
-            _h = 0
-            _h = 5 * _h + Ice.getHash(self.artist)
-            _h = 5 * _h + Ice.getHash(self.name)
-            _h = 5 * _h + Ice.getHash(self.year)
-            _h = 5 * _h + Ice.getHash(self.file)
-            return _h % 0x7fffffff
+        def ice_id(self):
+            return '::MP3Collection::Track'
 
-        def __compare(self, other):
-            if other is None:
-                return 1
-            elif not isinstance(other, _M_MP3Collection.Track):
-                return NotImplemented
-            else:
-                if self.artist is None or other.artist is None:
-                    if self.artist != other.artist:
-                        return (-1 if self.artist is None else 1)
-                else:
-                    if self.artist < other.artist:
-                        return -1
-                    elif self.artist > other.artist:
-                        return 1
-                if self.name is None or other.name is None:
-                    if self.name != other.name:
-                        return (-1 if self.name is None else 1)
-                else:
-                    if self.name < other.name:
-                        return -1
-                    elif self.name > other.name:
-                        return 1
-                if self.year is None or other.year is None:
-                    if self.year != other.year:
-                        return (-1 if self.year is None else 1)
-                else:
-                    if self.year < other.year:
-                        return -1
-                    elif self.year > other.year:
-                        return 1
-                if self.file is None or other.file is None:
-                    if self.file != other.file:
-                        return (-1 if self.file is None else 1)
-                else:
-                    if self.file < other.file:
-                        return -1
-                    elif self.file > other.file:
-                        return 1
-                return 0
-
-        def __lt__(self, other):
-            r = self.__compare(other)
-            if r is NotImplemented:
-                return r
-            else:
-                return r < 0
-
-        def __le__(self, other):
-            r = self.__compare(other)
-            if r is NotImplemented:
-                return r
-            else:
-                return r <= 0
-
-        def __gt__(self, other):
-            r = self.__compare(other)
-            if r is NotImplemented:
-                return r
-            else:
-                return r > 0
-
-        def __ge__(self, other):
-            r = self.__compare(other)
-            if r is NotImplemented:
-                return r
-            else:
-                return r >= 0
-
-        def __eq__(self, other):
-            r = self.__compare(other)
-            if r is NotImplemented:
-                return r
-            else:
-                return r == 0
-
-        def __ne__(self, other):
-            r = self.__compare(other)
-            if r is NotImplemented:
-                return r
-            else:
-                return r != 0
+        @staticmethod
+        def ice_staticId():
+            return '::MP3Collection::Track'
 
         def __str__(self):
             return IcePy.stringify(self, _M_MP3Collection._t_Track)
 
         __repr__ = __str__
 
-    _M_MP3Collection._t_Track = IcePy.defineStruct('::MP3Collection::Track', Track, (), (
-        ('artist', (), IcePy._t_string),
-        ('name', (), IcePy._t_string),
-        ('year', (), IcePy._t_string),
-        ('file', (), IcePy._t_string)
+    _M_MP3Collection._t_Track = IcePy.defineValue('::MP3Collection::Track', Track, -1, (), False, False, None, (
+        ('artist', (), IcePy._t_string, False, 0),
+        ('name', (), IcePy._t_string, False, 0),
+        ('year', (), IcePy._t_string, False, 0),
+        ('file', (), IcePy._t_string, False, 0)
     ))
+    Track._ice_type = _M_MP3Collection._t_Track
 
     _M_MP3Collection.Track = Track
     del Track
@@ -223,7 +141,7 @@ if 'CollectionPrx' not in _M_MP3Collection.__dict__:
     _M_MP3Collection._t_CollectionDisp = IcePy.defineClass('::MP3Collection::Collection', Collection, (), None, ())
     Collection._ice_type = _M_MP3Collection._t_CollectionDisp
 
-    Collection._op_search = IcePy.Operation('search', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_string, False, 0), ())
+    Collection._op_search = IcePy.Operation('search', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), _M_MP3Collection._t_Track, False, 0), ())
     Collection._op_add = IcePy.Operation('add', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_MP3Collection._t_Track, False, 0),), (), None, ())
     Collection._op_remove = IcePy.Operation('remove', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_MP3Collection._t_Track, False, 0),), (), None, ())
 

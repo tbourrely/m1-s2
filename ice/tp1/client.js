@@ -60,8 +60,10 @@ const MP3Collection = require("./generated/MP3Collection").MP3Collection;
                         const result = await collection.search('name', name);
 
                         if ('None' !== result) {
-                            const jsonResult = JSON.parse(result);
-                            console.log(jsonResult);
+                            console.log(result.artist);
+                            console.log(result.name);
+                            console.log(result.year);
+                            console.log(result.file);
                         } else {
                             console.log('No such track');
                         }

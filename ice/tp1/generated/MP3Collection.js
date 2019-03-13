@@ -24,17 +24,23 @@
 
     let MP3Collection = _ModuleRegistry.module("MP3Collection");
 
-    MP3Collection.Track = class
+    const iceC_MP3Collection_Track_ids = [
+        "::Ice::Object",
+        "::MP3Collection::Track"
+    ];
+
+    MP3Collection.Track = class extends Ice.Value
     {
         constructor(artist = "", name = "", year = "", file = "")
         {
+            super();
             this.artist = artist;
             this.name = name;
             this.year = year;
             this.file = file;
         }
 
-        _write(ostr)
+        _iceWriteMemberImpl(ostr)
         {
             ostr.writeString(this.artist);
             ostr.writeString(this.name);
@@ -42,21 +48,16 @@
             ostr.writeString(this.file);
         }
 
-        _read(istr)
+        _iceReadMemberImpl(istr)
         {
             this.artist = istr.readString();
             this.name = istr.readString();
             this.year = istr.readString();
             this.file = istr.readString();
         }
-
-        static get minWireSize()
-        {
-            return  4;
-        }
     };
 
-    Slice.defineStruct(MP3Collection.Track, true, true);
+    Slice.defineValue(MP3Collection.Track, iceC_MP3Collection_Track_ids[1], false);
 
     const iceC_MP3Collection_Collection_ids = [
         "::Ice::Object",
@@ -73,9 +74,9 @@
 
     Slice.defineOperations(MP3Collection.Collection, MP3Collection.CollectionPrx, iceC_MP3Collection_Collection_ids, 1,
     {
-        "search": [, , , , [7], [[7], [7]], , , , ],
-        "add": [, , , , , [[MP3Collection.Track]], , , , ],
-        "remove": [, , , , , [[MP3Collection.Track]], , , , ]
+        "search": [, , , , ["MP3Collection.Track", true], [[7], [7]], , , , true],
+        "add": [, , , , , [["MP3Collection.Track", true]], , , true, ],
+        "remove": [, , , , , [["MP3Collection.Track", true]], , , true, ]
     });
     exports.MP3Collection = MP3Collection;
 }

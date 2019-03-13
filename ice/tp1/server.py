@@ -19,8 +19,8 @@ class MP3CollectionI(MP3Collection.Collection):
     def search(self, key, value, current=None):
         for track in self.trackList:
             if getattr(track, key) == value:
-                return json.dumps(track.__dict__)
-
+                return track
+                
         return 'None'
 
     def showList(self):
