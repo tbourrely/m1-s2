@@ -12,16 +12,18 @@ class MP3CollectionI(MP3Collection.Collection):
         self.showList()
 
     def remove(self, track, current=None):
-        self.trackList.remove(track)
-        print("a track has been removed")
-        self.showList()
+        for t in self.trackList:
+            if track.name == t.name:
+                self.trackList.remove(t)
+                print("a track has been removed")
+                self.showList()
 
     def search(self, key, value, current=None):
         for track in self.trackList:
             if getattr(track, key) == value:
                 return track
-                
-        return 'None'
+
+        return None
 
     def showList(self):
         print("=========")

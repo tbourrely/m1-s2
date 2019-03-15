@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://tp2.soap.tbo/" xmlns:tns="http://tp2.soap.tbo/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="helloWorld" type="tns:helloWorld"/>
+
+  <xs:element name="helloWorldResponse" type="tns:helloWorldResponse"/>
+
+  <xs:complexType name="helloWorld">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="helloWorldResponse">
+    <xs:sequence>
+      <xs:element name="response" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

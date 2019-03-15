@@ -12,6 +12,8 @@ const MP3Collection = require("./generated/MP3Collection").MP3Collection;
         if(collection)
         {
 
+            collection.add(new MP3Collection.Track('test', 'test', 'test', 'test'));
+
             menu();
             let line = null;
 
@@ -36,20 +38,14 @@ const MP3Collection = require("./generated/MP3Collection").MP3Collection;
                     if ('r' === line) {
                         process.stdout.write("Name : ");
                         const name = await getline();
-                        
-                        const result = await collection.search('name', name);
-
-                        if ('None' !== result) {
-                            const jsonResult = JSON.parse(result);
-                            const rTrack = new MP3Collection.Track(
-                                jsonResult.artist,
-                                jsonResult.name,
-                                jsonResult.year,
-                                jsonResult.file
-                            );
-                            await collection.remove(rTrack);
-                        } else {
-                            console.log('No such track');
+                        try {
+                            const result = await collection.search('name', name);
+                            if (result)
+                                await collection.remove(result);
+                            else
+                                console.log('No music to remove');
+                        } catch(error) {
+                            console.log(error);
                         }
                     }
 
@@ -59,7 +55,7 @@ const MP3Collection = require("./generated/MP3Collection").MP3Collection;
                         
                         const result = await collection.search('name', name);
 
-                        if ('None' !== result) {
+                        if (result) {
                             console.log(result.artist);
                             console.log(result.name);
                             console.log(result.year);
