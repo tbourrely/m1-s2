@@ -7,12 +7,12 @@ const MP3Collection = require("./generated/MP3Collection").MP3Collection;
     try
     {
         communicator = Ice.initialize();
-        const base = communicator.stringToProxy("MP3Collection:default -p 10000");
+        const base = communicator.stringToProxy("SimpleMP3Manager:default -p 10000");
         const collection = await MP3Collection.CollectionPrx.checkedCast(base);
         if(collection)
         {
 
-            collection.add(new MP3Collection.Track('test', 'test', 'test', 'test'));
+            collection.add(new MP3Collection.Track('ABR', 'Test', '2009', 'test'));
 
             menu();
             let line = null;
@@ -50,18 +50,37 @@ const MP3Collection = require("./generated/MP3Collection").MP3Collection;
                     }
 
                     if ('s' === line) {
-                        process.stdout.write("Name : ");
-                        const name = await getline();
-                        
-                        const result = await collection.search('name', name);
+                        process.stdout.write("Field to seach on : \n");
+                        process.stdout.write("1) Artist\n2) Name\n3) Year\n");
+                        const fieldChoice = await getline();
 
-                        if (result) {
-                            console.log(result.artist);
-                            console.log(result.name);
-                            console.log(result.year);
-                            console.log(result.file);
-                        } else {
-                            console.log('No such track');
+                        process.stdout.write("Value to search : ");
+                        const value = await getline();
+
+                        let field = null;
+
+                        switch(fieldChoice) {
+                            case '1':
+                                field = 'artist';
+                                break;
+                            case '2':
+                                field = 'name';
+                                break;
+                            case '3':
+                                field = 'year';
+                                break;
+                        }
+
+                        if (field) {
+                            const result = await collection.search(field, value);
+                            if (result) {
+                                console.log(result.artist);
+                                console.log(result.name);
+                                console.log(result.year);
+                                console.log(result.file);
+                            } else {
+                                console.log('No such track');
+                            }
                         }
                     }
                     

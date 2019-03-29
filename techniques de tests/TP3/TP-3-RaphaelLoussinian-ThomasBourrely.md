@@ -142,22 +142,86 @@ disabledinput:notdisabled
 
 ### Code à l'origine de la vulnérabilité
 
-Non validation côté back.
+Non validation côté back-end.
 
 ## Cross-Site Scripting (XSS) > Cross Site Request Forgery (CSRF)
 
+Le code ci-dessous a été inséré dans le textarea du formulaire.
+L'ajout de l'image permet de faire une requete vers une URL malveillante, car elle est appelée lorsque le DOM est affiché.
+
+```html
+<img src="http://localhost:8080/WebGoat-5.4/attack?Screen=33&menu=900&transferFunds=4000" width="1px" height="1px">
+```
+
 ### Éléments utilisés
+
+* énoncé
 
 ### Code à l'origine de la vulnérabilité
 
 ## Session Management Flaws > Spoof an Authentication Cookie
 
+Le but est de modifier la valeur du cookie `AuthCookie` afin d'être connecté en tant que l'utilisateur `Alice`.
+
+Lorsque l'on se connecte avec les identifiants `webgoat:webgoat`, la valeur du cookie est : `65432ubphcfx`.
+
+Lorsque l'on se connecte avec les identifiants `aspect:aspect`, la valeur du cookie est : `65432udfqtb`.
+
+On peut constater que la valeur est proche pours les deux identifiants.
+
+Après quelques essais, on peut constater que la valeur du cookie se base sur l'identifiant.
+La valeur du cookie est `65432` + les lettres de l'identfiant décalée de 1 à l'envers.
+```text
+w -> x
+e -> f
+b -> c
+g -> h
+o -> p
+a -> b
+t -> u
+
+cookie : 65432ubphcfx
+```
+
+On peut donc construire la valeur du cookie pour l'utilisateur cible.
+```text
+a -> b
+l -> m
+i -> j
+c -> d
+e -> f
+
+cookie : 65432fdjmb
+```
+
+Une fois connecté avec un des deux identifiants fournis, il suffit de modifier le cookie pour qu'il ait la valeur : `65432fdjmb`. Suite à cela nous sommes connectés en tant qu'Alice.
+
 ### Éléments utilisés
+
+* énoncé
 
 ### Code à l'origine de la vulnérabilité
 
 ## Malicious Execution > Malicious File Execution
 
+Ici il s'agit d'uploader un fichier qui sera executé par le serveur. On profite du fait que le format du fichier n'est pas vérifié à l'upload.
+
+1. Créer un fichier `.jsp` qui a le contenu suivant : 
+```java
+<%@ page import="java.io.File"%>
+
+<%
+        File file = new File("/Users/thomasbourrely/Documents/m1-s2/techniques de tests/TP3/apache-tomcat-7.0.59/webapps/WebGoat-5.4/mfe_target/guest.txt");
+        file.createNewFile();
+%>
+```
+
+2. Uploader ce fichier dans webgoat
+
+3. Se rendre à l'adresse suivante afin d'executer le code java : `http://localhost:8080/WebGoat-5.4/uploads/malicious_file_exec.jsp`
+
 ### Éléments utilisés
+
+* énoncé
 
 ### Code à l'origine de la vulnérabilité
