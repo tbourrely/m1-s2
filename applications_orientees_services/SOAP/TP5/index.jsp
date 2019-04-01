@@ -1,22 +1,21 @@
-<%@ page contentType="text/html;charset=ISO-8859-1" language="java" %>
-<%@ page import="tbo.soap.tp5.HelloWorldService_Service" import="tbo.soap.tp5.HelloWorldService" %>
+<%@ page contentType="text/html;charset=ISO-8859-1" language="java" %> 
+<%@ page import="tbo.soap.tp5.HelloWorld" %>
 
 <%
-//String name = request.getParameter("name");
-//String result = "NULL";
+    String name = request.getParameter("name");
+    HelloWorld test = new HelloWorld();  
+    
+    String output = "NULL";
 
-//if (name == null || name.length() == 0) {
- //   result = "INVALID PARAM";
-//} else {
-    HelloWorldService_Service service = new HelloWorldService_Service();
-    HelloWorldService IBonjour = service.getHelloWorldPort();
-    String result = IBonjour.helloWorld("name");   
-//}
+    if (name != null && name.length() != 0) {
+        output = test.helloWorld(name);    
+    }
 
 %>
 
-<%= result %>
-<form action="">
-    <input name="name" type="text"/>
-    <input type="submit"/>
+<%= output %>
+
+<form>
+    <input name="name" type="text">
+    <input type="submit">
 </form>

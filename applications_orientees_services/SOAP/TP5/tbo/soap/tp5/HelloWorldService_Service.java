@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "HelloWorldService", targetNamespace = "http://tp5.soap.tbo/", wsdlLocation = "http://localhost:8080/SOAPTP5/HelloWorldService?wsdl")
+@WebServiceClient(name = "HelloWorldService", targetNamespace = "http://tp5.soap.tbo/", wsdlLocation = "http://localhost:8080/SOAPTP5/HelloWorldService?WSDL")
 public class HelloWorldService_Service
     extends Service
 {
@@ -30,7 +30,7 @@ public class HelloWorldService_Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/SOAPTP5/HelloWorldService?wsdl");
+            url = new URL("http://localhost:8080/SOAPTP5/HelloWorldService?WSDL");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
