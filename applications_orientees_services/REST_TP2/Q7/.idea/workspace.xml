@@ -7,163 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c6e69f9-6d7e-4fe0-9757-2f442e3b9a2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/client_old.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/Client/Client1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/Q10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/ContactNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q10/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/Q11.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/src/sn/ContactNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q11/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/Q12.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/ContactNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q12/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/Q2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/Q4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/Q5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/.idea/libraries/Contact.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/Client/Client1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/Q6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q6/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Contact.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Q7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q8/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q9/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Enoncé_REST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Enoncé_REST.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../REST/Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../REST/Q2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../REST/Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../REST/q4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/q4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q13/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q13/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q13/Client/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q13/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q13/web/WEB-INF/glassfish-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q13/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q13/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q13/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q13/Q13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q13/Q13.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q13/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q13/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -176,7 +29,7 @@
     <favorites_list name="Q7" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sn/AnnuaireService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -189,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="30">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,7 +71,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -230,6 +83,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,11 +128,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -328,7 +182,7 @@
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="" />
+        <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -408,17 +262,17 @@
       <updated>1554290766260</updated>
       <workItem from="1554290767725" duration="1727000" />
       <workItem from="1554298973039" duration="670000" />
+      <workItem from="1554326638160" duration="553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2397000" />
+    <option name="totallyTimeSpent" value="2950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49910232" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -489,20 +343,20 @@
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sn/AnnuaireService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
           <caret line="85" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
