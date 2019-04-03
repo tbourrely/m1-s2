@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="annuaire">
+    <output-path>$PROJECT_DIR$/out/artifacts/annuaire</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Q9" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Q9/web/Web" />
+    </root>
+  </artifact>
+</component>

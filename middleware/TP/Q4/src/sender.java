@@ -21,15 +21,6 @@ public class sender {
 
             for(int i = 0; i<5; i++) {
                 TextMessage textMessage = session.createTextMessage();
-                textMessage.setText(message+i);
-
-                queueSender.send(textMessage);
-
-                System.out.println("message envoye");
-            }
-
-            for(int i = 5; i<10; i++) {
-                TextMessage textMessage = session.createTextMessage();
             
                 if (recipient != null) {
                     System.out.println("Recipient : " + recipient);

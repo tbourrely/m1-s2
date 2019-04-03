@@ -41,8 +41,10 @@ public class Receiver {
             System.out.println(textMessage.getText());
 
             textMessage.acknowledge();
+            System.out.println("-- Acknowledged --");
 
             confirmationSender.send(textMessage.getJMSReplyTo(), reply);
+            System.out.println("-- Confirmation sent --");
 
             connection.close();
             System.exit(0);

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="annuaire" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1778e385-b4ef-43c0-b4c0-380df90fd28b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/client_old.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/Client/Client1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/Q10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/ContactNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q10/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sn/ContactNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/Q12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/ContactNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q12/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/Client/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/Q2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/Client/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q3/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/Client/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/Q4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q4/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/Client/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/Q5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q5/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/.idea/libraries/Contact.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/Client/Client1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/Q6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q6/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/.idea/libraries/Contact.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/Client/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/Q7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q7/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/Client/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/Client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q8/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/.idea/artifacts/annuaire.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/AnnuaireService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/src/sn/ContactNotFoundPlainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q9/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Enoncé_REST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Enoncé_REST.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST/Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST/Q2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST/Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST/q4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/q4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sn/AnnuaireService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+              <folding>
+                <element signature="e#3384#3385#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>showLastDeletedContact</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sn/AnnuaireService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Q11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Q11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Q11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Q11" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="GlassFish 5.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/annuaire/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="annuaire">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="annuaire" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1778e385-b4ef-43c0-b4c0-380df90fd28b" name="Default Changelist" comment="" />
+      <created>1554295170625</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554295170625</updated>
+      <workItem from="1554295172038" duration="1926000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1926000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="CDI" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sn/ContactNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sn/ContactNotFoundPlainException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sn/Contact.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sn/Carnet.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sn/AnnuaireService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+          <folding>
+            <element signature="e#3384#3385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>annuaire</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Q11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

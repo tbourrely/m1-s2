@@ -33,12 +33,12 @@ public class sender {
             queueSender.send(textMessage);
             System.out.println("message envoye");
 
-            System.out.println("Waiting for confirmation");
+            System.out.println("-- Waiting for confirmation --");
             
             QueueReceiver receiver = session.createReceiver(tQueue);
             TextMessage replyMessage = (TextMessage)receiver.receive();
 
-            System.out.println("Confirmation received");
+            System.out.println("-- Confirmation received --");
             System.out.println(replyMessage.getText());
 
 

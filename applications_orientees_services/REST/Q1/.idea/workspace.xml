@@ -7,38 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac282816-ee3e-4877-81f5-8aeabf7d9182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_ws_rs_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sn/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/artifacts/q2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/src/sn/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/.idea/artifacts/q3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/q3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/src/sn/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q3/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/.idea/artifacts/q4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/q4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/src/sn/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../q4/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../application_architecture_distribuee/compose/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SOAP/TP5/SOAPTP5.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../SOAP/TP5/SOAPTP5.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SOAP/TP5/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../SOAP/TP5/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SOAP/TP5/tbo/soap/tp5/HelloWorldService_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SOAP/TP5/tbo/soap/tp5/HelloWorldService_Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/client/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Q2/client/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../REST_TP2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../REST_TP2/src/sn/Carnet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../REST_TP2/src/sn/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../REST_TP2/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../q4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../q4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,11 +61,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1280" />
-    <option name="y" value="-174" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -253,16 +234,17 @@
       <workItem from="1554110275926" duration="8423000" />
       <workItem from="1554147087237" duration="590000" />
       <workItem from="1554148830668" duration="637000" />
+      <workItem from="1554274058695" duration="124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9650000" />
+    <option name="totallyTimeSpent" value="9774000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-174" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1687966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17095852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />

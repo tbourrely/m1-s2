@@ -36,8 +36,8 @@ public class Receiver {
 
             System.out.println(textMessage.getText());
 
-            System.out.println("Waiting before acknowledge");
-            Thread.sleep(1000);
+            System.out.println("Waiting 5s before acknowledge");
+            Thread.sleep(5000);
             textMessage.acknowledge();
 
             connection.close();
