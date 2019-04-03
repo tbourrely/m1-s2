@@ -1,0 +1,8 @@
+
+/homepages/7/d145287911/htdocs/sites/2015/ceri/preparation/tp4/totest/Form.php:40	The class Form has an overall complexity of 83 which is very high. The configured complexity threshold is 50.
+/homepages/7/d145287911/htdocs/sites/2015/ceri/preparation/tp4/totest/Form.php:89	The method compile() has a Cyclomatic Complexity of 34. The configured cyclomatic complexity threshold is 10.
+/homepages/7/d145287911/htdocs/sites/2015/ceri/preparation/tp4/totest/Form.php:89	The method compile() has an NPath complexity of 1642680337500. The configured NPath complexity threshold is 200.
+/homepages/7/d145287911/htdocs/sites/2015/ceri/preparation/tp4/totest/Form.php:89	The phpmd\node\methodnode compile() has 159 lines of code. Current threshold is set to 100. Avoid really long methods.
+/homepages/7/d145287911/htdocs/sites/2015/ceri/preparation/tp4/totest/Form.php:254	The method processFormData() has a Cyclomatic Complexity of 39. The configured cyclomatic complexity threshold is 10.
+/homepages/7/d145287911/htdocs/sites/2015/ceri/preparation/tp4/totest/Form.php:254	The method processFormData() has an NPath complexity of 9030575712. The configured NPath complexity threshold is 200.
+/homepages/7/d145287911/htdocs/sites/2015/ceri/preparation/tp4/totest/Form.php:254	The phpmd\node\methodnode processFormData() has 209 lines of code. Current threshold is set to 100. Avoid really long methods.
