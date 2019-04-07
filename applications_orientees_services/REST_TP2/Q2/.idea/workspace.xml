@@ -7,71 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="352c9149-e659-4b9f-8a9d-c2c3fb5e0f71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/client_old.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST/Q2/client_old/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Q2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q3/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/Q4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q4/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/Client/Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/Q5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q5/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Enoncé_REST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Enoncé_REST.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../REST/Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../REST/Q2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../REST/Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/Q2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../REST/q4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST/q4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOAP/TP6/C#/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../SOAP/TP6/C#/Client.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -97,16 +37,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sn/AnnuaireService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="30">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -145,7 +85,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -187,11 +127,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -218,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="GlassFish Server.GlassFish 5.0.0">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="Client" />
@@ -240,7 +181,7 @@
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="" />
+        <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -320,17 +261,18 @@
       <updated>1554276238026</updated>
       <workItem from="1554276239820" duration="1224000" />
       <workItem from="1554282167654" duration="81000" />
+      <workItem from="1554450474730" duration="679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1305000" />
+    <option name="totallyTimeSpent" value="1984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -374,8 +316,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sn/Contact.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Client/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sn/Carnet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -384,20 +333,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sn/Contact.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sn/AnnuaireService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
         </state>
       </provider>
     </entry>

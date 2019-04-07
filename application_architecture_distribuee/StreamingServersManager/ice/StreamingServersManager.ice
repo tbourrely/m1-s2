@@ -3,14 +3,12 @@
 module StreamingServerManager
 {
     class Server {
-        string id;
         string ip;
     };
 
     sequence<Server> serverSequence;
 
     class Track {
-        string id;
         string title;
         string artist;
         string album;
@@ -30,7 +28,7 @@ module StreamingServerManager
         trackSequence search(string key, string value);
         trackSequence list();
         string play(Track track);
-        Status add(trackSequence trackList);
-        Status remove(trackSequence trackList);
+        Status add(Track track, Server server);
+        Status remove(Track track, Server server);
     }
 }

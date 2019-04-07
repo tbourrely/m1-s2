@@ -7,20 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac282816-ee3e-4877-81f5-8aeabf7d9182" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Q2/client/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../q4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../q4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST_TP2/Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST_TP2/Q1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST_TP2/Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST_TP2/Q2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOAP/TP6/C#/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../SOAP/TP6/C#/Client.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,7 +22,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sn/HelloWorld.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,7 +65,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -71,7 +75,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -95,14 +98,22 @@
               <item name="Q1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Q1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Q1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sn" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -153,7 +164,7 @@
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="" />
+        <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -235,16 +246,18 @@
       <workItem from="1554147087237" duration="590000" />
       <workItem from="1554148830668" duration="637000" />
       <workItem from="1554274058695" duration="124000" />
+      <workItem from="1554450191797" duration="1213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9774000" />
+    <option name="totallyTimeSpent" value="10987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17095852" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17310444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -252,7 +265,7 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32871288" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32771084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -289,20 +302,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sn/HelloWorld.java">
+    <entry file="file://$PROJECT_DIR$/client/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/sn/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="120">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

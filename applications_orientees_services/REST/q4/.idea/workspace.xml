@@ -7,25 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6afabce9-02a1-407f-b658-0806887b6fe4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Q2/client_old/client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/client_old/client_old.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Q2/client_old/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/.idea/artifacts/annuaire.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/REST_TP2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/src/sn/AnnuaireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/src/sn/Carnet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/src/sn/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../REST_TP2/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Q2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST_TP2/Q1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST_TP2/Q1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../REST_TP2/Q2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../REST_TP2/Q2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOAP/TP6/C#/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../SOAP/TP6/C#/Client.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q10/out/artifacts/Q10/Q10.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q4/src/sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q5/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q6/src/sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../middleware/TP/Q9/out/artifacts/Q9/Q9.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,20 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sn/HelloWorld.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -68,7 +41,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -78,8 +51,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,9 +84,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -159,7 +133,7 @@
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="PASSWORD" value="" />
+        <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -230,17 +204,17 @@
       <updated>1554149207665</updated>
       <workItem from="1554149209338" duration="518000" />
       <workItem from="1554273644974" duration="1799000" />
+      <workItem from="1554450305318" duration="772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2317000" />
+    <option name="totallyTimeSpent" value="3089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -248,7 +222,7 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32970297" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -286,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sn/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

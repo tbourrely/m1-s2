@@ -6,7 +6,7 @@ namespace Application
         public static void Main(String[] args)
         {
             TextCasing service = new TextCasing();
-            Console.WriteLine(service.InvertStringCase("Chris"));
+            Console.WriteLine(service.InvertStringCase("Test"));
         }
     }
 }

@@ -24,8 +24,7 @@ __name__ = 'StreamingServerManager'
 if 'Server' not in _M_StreamingServerManager.__dict__:
     _M_StreamingServerManager.Server = Ice.createTempClass()
     class Server(Ice.Value):
-        def __init__(self, id='', ip=''):
-            self.id = id
+        def __init__(self, ip=''):
             self.ip = ip
 
         def ice_id(self):
@@ -40,10 +39,7 @@ if 'Server' not in _M_StreamingServerManager.__dict__:
 
         __repr__ = __str__
 
-    _M_StreamingServerManager._t_Server = IcePy.defineValue('::StreamingServerManager::Server', Server, -1, (), False, False, None, (
-        ('id', (), IcePy._t_string, False, 0),
-        ('ip', (), IcePy._t_string, False, 0)
-    ))
+    _M_StreamingServerManager._t_Server = IcePy.defineValue('::StreamingServerManager::Server', Server, -1, (), False, False, None, (('ip', (), IcePy._t_string, False, 0),))
     Server._ice_type = _M_StreamingServerManager._t_Server
 
     _M_StreamingServerManager.Server = Server
@@ -55,8 +51,7 @@ if '_t_serverSequence' not in _M_StreamingServerManager.__dict__:
 if 'Track' not in _M_StreamingServerManager.__dict__:
     _M_StreamingServerManager.Track = Ice.createTempClass()
     class Track(Ice.Value):
-        def __init__(self, id='', title='', artist='', album='', path='', servers=None):
-            self.id = id
+        def __init__(self, title='', artist='', album='', path='', servers=None):
             self.title = title
             self.artist = artist
             self.album = album
@@ -78,7 +73,6 @@ if 'Track' not in _M_StreamingServerManager.__dict__:
     _M_StreamingServerManager._t_Track = IcePy.declareValue('::StreamingServerManager::Track')
 
     _M_StreamingServerManager._t_Track = IcePy.defineValue('::StreamingServerManager::Track', Track, -1, (), False, False, None, (
-        ('id', (), IcePy._t_string, False, 0),
         ('title', (), IcePy._t_string, False, 0),
         ('artist', (), IcePy._t_string, False, 0),
         ('album', (), IcePy._t_string, False, 0),
@@ -163,26 +157,26 @@ if 'ManagerPrx' not in _M_StreamingServerManager.__dict__:
         def end_play(self, _r):
             return _M_StreamingServerManager.Manager._op_play.end(self, _r)
 
-        def add(self, trackList, context=None):
-            return _M_StreamingServerManager.Manager._op_add.invoke(self, ((trackList, ), context))
+        def add(self, track, server, context=None):
+            return _M_StreamingServerManager.Manager._op_add.invoke(self, ((track, server), context))
 
-        def addAsync(self, trackList, context=None):
-            return _M_StreamingServerManager.Manager._op_add.invokeAsync(self, ((trackList, ), context))
+        def addAsync(self, track, server, context=None):
+            return _M_StreamingServerManager.Manager._op_add.invokeAsync(self, ((track, server), context))
 
-        def begin_add(self, trackList, _response=None, _ex=None, _sent=None, context=None):
-            return _M_StreamingServerManager.Manager._op_add.begin(self, ((trackList, ), _response, _ex, _sent, context))
+        def begin_add(self, track, server, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServerManager.Manager._op_add.begin(self, ((track, server), _response, _ex, _sent, context))
 
         def end_add(self, _r):
             return _M_StreamingServerManager.Manager._op_add.end(self, _r)
 
-        def remove(self, trackList, context=None):
-            return _M_StreamingServerManager.Manager._op_remove.invoke(self, ((trackList, ), context))
+        def remove(self, track, server, context=None):
+            return _M_StreamingServerManager.Manager._op_remove.invoke(self, ((track, server), context))
 
-        def removeAsync(self, trackList, context=None):
-            return _M_StreamingServerManager.Manager._op_remove.invokeAsync(self, ((trackList, ), context))
+        def removeAsync(self, track, server, context=None):
+            return _M_StreamingServerManager.Manager._op_remove.invokeAsync(self, ((track, server), context))
 
-        def begin_remove(self, trackList, _response=None, _ex=None, _sent=None, context=None):
-            return _M_StreamingServerManager.Manager._op_remove.begin(self, ((trackList, ), _response, _ex, _sent, context))
+        def begin_remove(self, track, server, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServerManager.Manager._op_remove.begin(self, ((track, server), _response, _ex, _sent, context))
 
         def end_remove(self, _r):
             return _M_StreamingServerManager.Manager._op_remove.end(self, _r)
@@ -225,10 +219,10 @@ if 'ManagerPrx' not in _M_StreamingServerManager.__dict__:
         def play(self, track, current=None):
             raise NotImplementedError("servant method 'play' not implemented")
 
-        def add(self, trackList, current=None):
+        def add(self, track, server, current=None):
             raise NotImplementedError("servant method 'add' not implemented")
 
-        def remove(self, trackList, current=None):
+        def remove(self, track, server, current=None):
             raise NotImplementedError("servant method 'remove' not implemented")
 
         def __str__(self):
@@ -242,8 +236,8 @@ if 'ManagerPrx' not in _M_StreamingServerManager.__dict__:
     Manager._op_search = IcePy.Operation('search', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), _M_StreamingServerManager._t_trackSequence, False, 0), ())
     Manager._op_list = IcePy.Operation('list', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), _M_StreamingServerManager._t_trackSequence, False, 0), ())
     Manager._op_play = IcePy.Operation('play', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServerManager._t_Track, False, 0),), (), ((), IcePy._t_string, False, 0), ())
-    Manager._op_add = IcePy.Operation('add', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServerManager._t_trackSequence, False, 0),), (), ((), _M_StreamingServerManager._t_Status, False, 0), ())
-    Manager._op_remove = IcePy.Operation('remove', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServerManager._t_trackSequence, False, 0),), (), ((), _M_StreamingServerManager._t_Status, False, 0), ())
+    Manager._op_add = IcePy.Operation('add', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServerManager._t_Track, False, 0), ((), _M_StreamingServerManager._t_Server, False, 0)), (), ((), _M_StreamingServerManager._t_Status, False, 0), ())
+    Manager._op_remove = IcePy.Operation('remove', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServerManager._t_Track, False, 0), ((), _M_StreamingServerManager._t_Server, False, 0)), (), ((), _M_StreamingServerManager._t_Status, False, 0), ())
 
     _M_StreamingServerManager.Manager = Manager
     del Manager
