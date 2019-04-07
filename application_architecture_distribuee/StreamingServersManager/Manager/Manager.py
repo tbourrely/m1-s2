@@ -62,7 +62,7 @@ class ManagerI(StreamingServerManager.Manager):
                 {'$push': {'servers': serverID}}
             )
             
-        return StreamingServerManager.Status(200, 'OK')
+        return StreamingServerManager.Status(HTTPStatus.OK.value, HTTPStatus.OK.phrase)
 
     def remove(self, track, server, current=None):
         """ Remove a track from the database
@@ -86,13 +86,13 @@ class ManagerI(StreamingServerManager.Manager):
         trackFromDB = self._search_existing_track(track)
 
         if serverFromDB == None or trackFromDB == None:
-            return StreamingServerManager.Status(304, 'NOT MODIFIED')
+            return StreamingServerManager.Status(HTTPStatus.NOT_MODIFIED.value, HTTPStatus.NOT_MODIFIED.phrase)
 
         serverId = serverFromDB.get('_id')
         trackId = trackFromDB.get('_id')
 
         if serverId not in trackFromDB.get('servers'):
-            return StreamingServerManager.Status(304, 'NOT MODIFIED')
+            return StreamingServerManager.Status(HTTPStatus.NOT_MODIFIED.value, HTTPStatus.NOT_MODIFIED.phrase)
 
         serverListLength = len(trackFromDB.get('servers'))
 
@@ -109,7 +109,7 @@ class ManagerI(StreamingServerManager.Manager):
         if 0 == songsLeftForServer:
             self.db.servers.delete_one({'_id': serverId})
 
-        return StreamingServerManager.Status(200, 'OK')
+        return StreamingServerManager.Status(HTTPStatus.OK.value, HTTPStatus.OK.phrase)
 
     def _search_existing_track(self, track):
         """ Search for a song in the database
