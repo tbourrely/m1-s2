@@ -1,8 +1,11 @@
+import os
 from secrets import token_urlsafe
 from bson.json_util import dumps
 from flask import Response, request
 from controllers.utils import doesFileExists
+from database.Client import Client
 
+security_db = Client().security
 
 def createToken():
     filename = request.form['file']
@@ -24,6 +27,8 @@ def createToken():
 
     if apiKeyFromDB is None:
         return Response(status=401)
+
+    TOKEN_LENGTH = os.getenv('TOKEN_LENGTH')
 
     newtoken = {
         'file' : filename,

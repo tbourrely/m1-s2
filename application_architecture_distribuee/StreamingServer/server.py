@@ -1,34 +1,25 @@
-from flask import Flask, Response, request
-import pymongo
-import urllib.parse
-from dotenv import load_dotenv
+from flask import Flask, request
 import os
+from pathlib import Path  # python3 only
+from dotenv import load_dotenv
+
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path)
+
 import controllers.tokens as tokensController
-
-load_dotenv()
-TOKEN_LENGTH = 24
-FILES_DIR = 'tracks'
-
-username = urllib.parse.quote_plus(os.getenv('MONGODB_USER'))
-password = urllib.parse.quote_plus(os.getenv('MONGODB_PASSWORD'))
-
-client = pymongo.MongoClient("mongodb+srv://" + username + ":" + password+ "@cluster0-xlc7s.mongodb.net/security?retryWrites=true")
-security_db = client.security
-
 
 app = Flask(__name__)
 
-def streamFile(fileName):
-    path = './' + FILES_DIR + '/' + fileName
-    with open(path, 'rb') as r:
-        data = r.read(1024)
-        while data:
-            yield data
-            data = r.read(1024)
 
-        r.close()
+# def streamFile(fileName):
+#     path = './' + FILES_DIR + '/' + fileName
+#     with open(path, 'rb') as r:
+#         data = r.read(1024)
+#         while data:
+#             yield data
+#             data = r.read(1024)
 
-
+#         r.close()
 
 # @app.route("/stream/<string:filename>", methods=['GET'])
 # def stream(filename):
