@@ -28,7 +28,7 @@ def createToken():
     if apiKeyFromDB is None:
         return Response(status=401)
 
-    TOKEN_LENGTH = os.getenv('TOKEN_LENGTH')
+    TOKEN_LENGTH = int(os.getenv('TOKEN_LENGTH'))
 
     newtoken = {
         'file' : filename,
