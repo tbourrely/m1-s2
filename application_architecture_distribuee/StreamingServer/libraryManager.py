@@ -6,57 +6,68 @@ with Ice.initialize(sys.argv) as communicator:
     baseServer = communicator.stringToProxy("Server:default -p 10000")
     server = StreamingServer.ServerPrx.checkedCast(baseServer)
 
-    baseSecurityManager = communicator.stringToProxy("SecurityManager:default -p 10000")
-    securityManager = StreamingServer.SecurityManagerPrx.checkedCast(baseSecurityManager)
-
     if not server:
         raise RuntimeError("Invalid proxy")
 
-    if not securityManager:
-        raise RuntimeError("Invalid proxy")
-    
-    list = server.list()
-    print(list)
+    menu = "========\nOptions:\n1) Add Track\n2) Remove Track\n3) Search Track\n4) List Tracks\n5) Exit\n========"
+    print(menu)
 
-    list = securityManager.listManagers()
-    print(list)
+    choice = int(input("Choice : "))
 
-    # menu = "========\nOptions:\n1) Add\n2) Remove\n3) Search\n========"
-    # print(menu)
+    while (5 != choice) :
 
-    # choice = int(input("Choice : "))
+        if 1 == choice:
+            title = input('Title : ')
+            album = input('Album : ')
+            artist = input('Artist : ')
+            path = input('Path (starting from tracks folder) : ')
 
-    # if (1 == choice):
-    #     artist = input('Artist : ')
-    #     name = input('Name : ')
-    #     year = input('Year : ')
-    #     file = 'filepath'
-    #     track = MP3Collection.Track(artist, name, year, file)
-    #     collection.add(track)
-    # elif (2 == choice):
-    #     name = input('Name : ')
-    #     result = collection.search('name', name)
+            track = StreamingServer.Track(title, album, artist, path)
+            result = server.add(track)
 
-    #     if 'None' != result:
-    #         result = json.loads(result)
-    #         track = MP3Collection.Track(
-    #             result.get('artist'), 
-    #             result.get('name'),
-    #             result.get('year'),
-    #             result.get('file')
-    #         )
-    #         collection.remove(track)
-    #     else:
-    #         print('No matching file to remove')
+            text = "Success" if result.code == 200 else "Fail"
+            print(text)
+        
+        elif 2 == choice:
+            path = input("Path : ")
 
-    # else:
-    #     name = input('Name : ')
-    #     result = collection.search('name', name)
+            result = server.search('path', path)
 
-    #     if result != 'None':
-    #         print("Artist : " + result.artist)
-    #         print("Name : " + result.name)
-    #         print("Year : " + result.year)
-    #         print("File : " + result.file)
-    #     else :
-    #         print("No match found")
+            if len(result) > 0:
+                for item in result:
+                    r = server.remove(item)
+                    text = "Success" if r.code == 200 else "Fail"
+                    print(text)
+            else:
+                print('No match')
+
+        elif 3 == choice:
+            key = input('key : ')
+            value = input('value : ')
+
+            result = server.search(key, value)
+
+            print("=====================")
+            for item in result:
+                print("Title : " + item.title)
+                print("Album : " + item.album)
+                print("Artist : " + item.artist)
+                print("Path : " + item.path)
+                print("-----------------------")
+            print("=====================")
+
+        elif 4 == choice:
+            result = server.list()
+
+            print("=====================")
+            for item in result:
+                print("Title : " + item.title)
+                print("Album : " + item.album)
+                print("Artist : " + item.artist)
+                print("Path : " + item.path)
+                print("-----------------------")
+            print("=====================")
+
+        input('Press any key to continue')
+        print(menu)
+        choice = int(input("Choice : "))
