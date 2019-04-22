@@ -47,23 +47,3 @@ app = Flask(__name__)
     
 #     return Response('token : ' + token)
 
-@app.route('/token', methods=['GET', 'DELETE', 'POST'])
-def token():
-    if 'GET' == request.method:
-        return tokensController.getTokenList()
-    elif 'DELETE' == request.method:
-        return tokensController.deleteToken()
-    else:
-        return tokensController.createToken()
-
-@app.route('/api_key', methods=['GET', 'DELETE', 'POST'])
-def apiKey():
-    if 'GET' == request.method:
-        return apiKeyController.getApiKeyList()
-    elif 'POST' == request.method:
-        return apiKeyController.postApiKey()
-    else:
-        return apiKeyController.deleteApiKey()
-
-if __name__ == '__main__':
-    app.run(debug=True)
