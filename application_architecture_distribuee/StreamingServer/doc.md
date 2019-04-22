@@ -3,8 +3,8 @@ https://drive.google.com/file/d/1obrmBH6uTyVcCgUCJaXJWm31FLRJ8bIX/view
 
 ## Composants
 
-MongoDB
--> authorized_managers
+MongoDB  
+-> authorized_managers  
 -> tokens
 
 Python serveur

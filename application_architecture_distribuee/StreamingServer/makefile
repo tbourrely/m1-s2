@@ -7,5 +7,8 @@ build: clean
 run_server:
 	python3 iceServer.py
 
-run_client:
-	python3 client.py
+run_library_manager:
+	python3 libraryManager.py
+
+run_security_manager:
+	python3 securityManager.py

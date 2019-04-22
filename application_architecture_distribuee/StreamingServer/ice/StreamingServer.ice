@@ -36,7 +36,7 @@ module StreamingServer {
     sequence<Manager> managerList;
 
     interface SecurityManager {
-        string addToken(string file);
+        string addToken(string file, string apiKey);
         bool removeToken(string token);
         string addManager();
         bool removeManager(string apiKey);

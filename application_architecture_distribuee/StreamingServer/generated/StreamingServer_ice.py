@@ -275,14 +275,14 @@ if 'SecurityManagerPrx' not in _M_StreamingServer.__dict__:
     _M_StreamingServer.SecurityManagerPrx = Ice.createTempClass()
     class SecurityManagerPrx(Ice.ObjectPrx):
 
-        def addToken(self, file, context=None):
-            return _M_StreamingServer.SecurityManager._op_addToken.invoke(self, ((file, ), context))
+        def addToken(self, file, apiKey, context=None):
+            return _M_StreamingServer.SecurityManager._op_addToken.invoke(self, ((file, apiKey), context))
 
-        def addTokenAsync(self, file, context=None):
-            return _M_StreamingServer.SecurityManager._op_addToken.invokeAsync(self, ((file, ), context))
+        def addTokenAsync(self, file, apiKey, context=None):
+            return _M_StreamingServer.SecurityManager._op_addToken.invokeAsync(self, ((file, apiKey), context))
 
-        def begin_addToken(self, file, _response=None, _ex=None, _sent=None, context=None):
-            return _M_StreamingServer.SecurityManager._op_addToken.begin(self, ((file, ), _response, _ex, _sent, context))
+        def begin_addToken(self, file, apiKey, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.SecurityManager._op_addToken.begin(self, ((file, apiKey), _response, _ex, _sent, context))
 
         def end_addToken(self, _r):
             return _M_StreamingServer.SecurityManager._op_addToken.end(self, _r)
@@ -376,7 +376,7 @@ if 'SecurityManagerPrx' not in _M_StreamingServer.__dict__:
         def ice_staticId():
             return '::StreamingServer::SecurityManager'
 
-        def addToken(self, file, current=None):
+        def addToken(self, file, apiKey, current=None):
             raise NotImplementedError("servant method 'addToken' not implemented")
 
         def removeToken(self, token, current=None):
@@ -402,7 +402,7 @@ if 'SecurityManagerPrx' not in _M_StreamingServer.__dict__:
     _M_StreamingServer._t_SecurityManagerDisp = IcePy.defineClass('::StreamingServer::SecurityManager', SecurityManager, (), None, ())
     SecurityManager._ice_type = _M_StreamingServer._t_SecurityManagerDisp
 
-    SecurityManager._op_addToken = IcePy.Operation('addToken', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_string, False, 0), ())
+    SecurityManager._op_addToken = IcePy.Operation('addToken', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_string, False, 0), ())
     SecurityManager._op_removeToken = IcePy.Operation('removeToken', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())
     SecurityManager._op_addManager = IcePy.Operation('addManager', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), IcePy._t_string, False, 0), ())
     SecurityManager._op_removeManager = IcePy.Operation('removeManager', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())

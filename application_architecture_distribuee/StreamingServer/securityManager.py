@@ -15,13 +15,24 @@ with Ice.initialize(sys.argv) as communicator:
     choice = int(input("Choice : "))
 
     while(7 != choice):
-
+        # Add Token
         if (1 == choice):
-            filename = input('file name : ')
-            result = securityManager.addToken(filename)
+            filename = input('file path (from tracks directory) : ')
+            apiKey = input('Api Key : ')
+            result = securityManager.addToken(filename, apiKey)
 
-            print("Token : " + result)
+            if "-1" == result:
+                text = "Invalid Api Key"
+            elif "-2" == result:
+                text = "Invalid file path"
+            elif "-3" == result:
+                text = "Track not in DB"
+            else:
+                text = "Token" + result
 
+            print(text)
+
+        # Remove Token
         elif (2 == choice):
             token = input('token : ')
             result = securityManager.removeToken(token)
@@ -29,6 +40,7 @@ with Ice.initialize(sys.argv) as communicator:
             text = "Success" if result else "Fail"
             print(text)
 
+        # List Tokens
         elif (3 == choice):
             listT = securityManager.listTokens()
 
@@ -38,16 +50,19 @@ with Ice.initialize(sys.argv) as communicator:
                 print("Token : " + token.token)
                 print("=======================")
 
+        # Add Api Key
         elif (4 == choice):
             result = securityManager.addManager()
             print("Api Key : " + result)
 
+        # Remove Api Key
         elif (5 == choice):
             apiKey = input("Api Key : ")
             result = securityManager.removeManager(apiKey)
             text = "Success" if result else "Fail"
             print(text)
         
+        # List Api Keys
         elif (6 == choice):
             listM = securityManager.listManagers()
 
@@ -56,6 +71,8 @@ with Ice.initialize(sys.argv) as communicator:
                 print("Api Key : " + manager.apiKey)
                 print("=======================")
 
+
+        input("Press any key to continue")
         print(menu)
         choice = int(input("Choice : "))
     
