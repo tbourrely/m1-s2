@@ -114,14 +114,14 @@ if 'ServerPrx' not in _M_StreamingServer.__dict__:
         def end_list(self, _r):
             return _M_StreamingServer.Server._op_list.end(self, _r)
 
-        def play(self, track, context=None):
-            return _M_StreamingServer.Server._op_play.invoke(self, ((track, ), context))
+        def play(self, track, apiKey, context=None):
+            return _M_StreamingServer.Server._op_play.invoke(self, ((track, apiKey), context))
 
-        def playAsync(self, track, context=None):
-            return _M_StreamingServer.Server._op_play.invokeAsync(self, ((track, ), context))
+        def playAsync(self, track, apiKey, context=None):
+            return _M_StreamingServer.Server._op_play.invokeAsync(self, ((track, apiKey), context))
 
-        def begin_play(self, track, _response=None, _ex=None, _sent=None, context=None):
-            return _M_StreamingServer.Server._op_play.begin(self, ((track, ), _response, _ex, _sent, context))
+        def begin_play(self, track, apiKey, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.Server._op_play.begin(self, ((track, apiKey), _response, _ex, _sent, context))
 
         def end_play(self, _r):
             return _M_StreamingServer.Server._op_play.end(self, _r)
@@ -185,7 +185,7 @@ if 'ServerPrx' not in _M_StreamingServer.__dict__:
         def list(self, current=None):
             raise NotImplementedError("servant method 'list' not implemented")
 
-        def play(self, track, current=None):
+        def play(self, track, apiKey, current=None):
             raise NotImplementedError("servant method 'play' not implemented")
 
         def add(self, track, current=None):
@@ -204,11 +204,212 @@ if 'ServerPrx' not in _M_StreamingServer.__dict__:
 
     Server._op_search = IcePy.Operation('search', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), _M_StreamingServer._t_trackSequence, False, 0), ())
     Server._op_list = IcePy.Operation('list', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), _M_StreamingServer._t_trackSequence, False, 0), ())
-    Server._op_play = IcePy.Operation('play', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServer._t_Track, False, 0),), (), ((), IcePy._t_string, False, 0), ())
+    Server._op_play = IcePy.Operation('play', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServer._t_Track, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_string, False, 0), ())
     Server._op_add = IcePy.Operation('add', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServer._t_Track, False, 0),), (), ((), _M_StreamingServer._t_Status, False, 0), ())
     Server._op_remove = IcePy.Operation('remove', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_StreamingServer._t_Track, False, 0),), (), ((), _M_StreamingServer._t_Status, False, 0), ())
 
     _M_StreamingServer.Server = Server
     del Server
+
+if 'Token' not in _M_StreamingServer.__dict__:
+    _M_StreamingServer.Token = Ice.createTempClass()
+    class Token(Ice.Value):
+        def __init__(self, file='', token=''):
+            self.file = file
+            self.token = token
+
+        def ice_id(self):
+            return '::StreamingServer::Token'
+
+        @staticmethod
+        def ice_staticId():
+            return '::StreamingServer::Token'
+
+        def __str__(self):
+            return IcePy.stringify(self, _M_StreamingServer._t_Token)
+
+        __repr__ = __str__
+
+    _M_StreamingServer._t_Token = IcePy.defineValue('::StreamingServer::Token', Token, -1, (), False, False, None, (
+        ('file', (), IcePy._t_string, False, 0),
+        ('token', (), IcePy._t_string, False, 0)
+    ))
+    Token._ice_type = _M_StreamingServer._t_Token
+
+    _M_StreamingServer.Token = Token
+    del Token
+
+if 'Manager' not in _M_StreamingServer.__dict__:
+    _M_StreamingServer.Manager = Ice.createTempClass()
+    class Manager(Ice.Value):
+        def __init__(self, apiKey=''):
+            self.apiKey = apiKey
+
+        def ice_id(self):
+            return '::StreamingServer::Manager'
+
+        @staticmethod
+        def ice_staticId():
+            return '::StreamingServer::Manager'
+
+        def __str__(self):
+            return IcePy.stringify(self, _M_StreamingServer._t_Manager)
+
+        __repr__ = __str__
+
+    _M_StreamingServer._t_Manager = IcePy.defineValue('::StreamingServer::Manager', Manager, -1, (), False, False, None, (('apiKey', (), IcePy._t_string, False, 0),))
+    Manager._ice_type = _M_StreamingServer._t_Manager
+
+    _M_StreamingServer.Manager = Manager
+    del Manager
+
+if '_t_tokenList' not in _M_StreamingServer.__dict__:
+    _M_StreamingServer._t_tokenList = IcePy.defineSequence('::StreamingServer::tokenList', (), _M_StreamingServer._t_Token)
+
+if '_t_managerList' not in _M_StreamingServer.__dict__:
+    _M_StreamingServer._t_managerList = IcePy.defineSequence('::StreamingServer::managerList', (), _M_StreamingServer._t_Manager)
+
+_M_StreamingServer._t_SecurityManager = IcePy.defineValue('::StreamingServer::SecurityManager', Ice.Value, -1, (), False, True, None, ())
+
+if 'SecurityManagerPrx' not in _M_StreamingServer.__dict__:
+    _M_StreamingServer.SecurityManagerPrx = Ice.createTempClass()
+    class SecurityManagerPrx(Ice.ObjectPrx):
+
+        def addToken(self, file, context=None):
+            return _M_StreamingServer.SecurityManager._op_addToken.invoke(self, ((file, ), context))
+
+        def addTokenAsync(self, file, context=None):
+            return _M_StreamingServer.SecurityManager._op_addToken.invokeAsync(self, ((file, ), context))
+
+        def begin_addToken(self, file, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.SecurityManager._op_addToken.begin(self, ((file, ), _response, _ex, _sent, context))
+
+        def end_addToken(self, _r):
+            return _M_StreamingServer.SecurityManager._op_addToken.end(self, _r)
+
+        def removeToken(self, token, context=None):
+            return _M_StreamingServer.SecurityManager._op_removeToken.invoke(self, ((token, ), context))
+
+        def removeTokenAsync(self, token, context=None):
+            return _M_StreamingServer.SecurityManager._op_removeToken.invokeAsync(self, ((token, ), context))
+
+        def begin_removeToken(self, token, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.SecurityManager._op_removeToken.begin(self, ((token, ), _response, _ex, _sent, context))
+
+        def end_removeToken(self, _r):
+            return _M_StreamingServer.SecurityManager._op_removeToken.end(self, _r)
+
+        def addManager(self, context=None):
+            return _M_StreamingServer.SecurityManager._op_addManager.invoke(self, ((), context))
+
+        def addManagerAsync(self, context=None):
+            return _M_StreamingServer.SecurityManager._op_addManager.invokeAsync(self, ((), context))
+
+        def begin_addManager(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.SecurityManager._op_addManager.begin(self, ((), _response, _ex, _sent, context))
+
+        def end_addManager(self, _r):
+            return _M_StreamingServer.SecurityManager._op_addManager.end(self, _r)
+
+        def removeManager(self, apiKey, context=None):
+            return _M_StreamingServer.SecurityManager._op_removeManager.invoke(self, ((apiKey, ), context))
+
+        def removeManagerAsync(self, apiKey, context=None):
+            return _M_StreamingServer.SecurityManager._op_removeManager.invokeAsync(self, ((apiKey, ), context))
+
+        def begin_removeManager(self, apiKey, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.SecurityManager._op_removeManager.begin(self, ((apiKey, ), _response, _ex, _sent, context))
+
+        def end_removeManager(self, _r):
+            return _M_StreamingServer.SecurityManager._op_removeManager.end(self, _r)
+
+        def listTokens(self, context=None):
+            return _M_StreamingServer.SecurityManager._op_listTokens.invoke(self, ((), context))
+
+        def listTokensAsync(self, context=None):
+            return _M_StreamingServer.SecurityManager._op_listTokens.invokeAsync(self, ((), context))
+
+        def begin_listTokens(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.SecurityManager._op_listTokens.begin(self, ((), _response, _ex, _sent, context))
+
+        def end_listTokens(self, _r):
+            return _M_StreamingServer.SecurityManager._op_listTokens.end(self, _r)
+
+        def listManagers(self, context=None):
+            return _M_StreamingServer.SecurityManager._op_listManagers.invoke(self, ((), context))
+
+        def listManagersAsync(self, context=None):
+            return _M_StreamingServer.SecurityManager._op_listManagers.invokeAsync(self, ((), context))
+
+        def begin_listManagers(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_StreamingServer.SecurityManager._op_listManagers.begin(self, ((), _response, _ex, _sent, context))
+
+        def end_listManagers(self, _r):
+            return _M_StreamingServer.SecurityManager._op_listManagers.end(self, _r)
+
+        @staticmethod
+        def checkedCast(proxy, facetOrContext=None, context=None):
+            return _M_StreamingServer.SecurityManagerPrx.ice_checkedCast(proxy, '::StreamingServer::SecurityManager', facetOrContext, context)
+
+        @staticmethod
+        def uncheckedCast(proxy, facet=None):
+            return _M_StreamingServer.SecurityManagerPrx.ice_uncheckedCast(proxy, facet)
+
+        @staticmethod
+        def ice_staticId():
+            return '::StreamingServer::SecurityManager'
+    _M_StreamingServer._t_SecurityManagerPrx = IcePy.defineProxy('::StreamingServer::SecurityManager', SecurityManagerPrx)
+
+    _M_StreamingServer.SecurityManagerPrx = SecurityManagerPrx
+    del SecurityManagerPrx
+
+    _M_StreamingServer.SecurityManager = Ice.createTempClass()
+    class SecurityManager(Ice.Object):
+
+        def ice_ids(self, current=None):
+            return ('::Ice::Object', '::StreamingServer::SecurityManager')
+
+        def ice_id(self, current=None):
+            return '::StreamingServer::SecurityManager'
+
+        @staticmethod
+        def ice_staticId():
+            return '::StreamingServer::SecurityManager'
+
+        def addToken(self, file, current=None):
+            raise NotImplementedError("servant method 'addToken' not implemented")
+
+        def removeToken(self, token, current=None):
+            raise NotImplementedError("servant method 'removeToken' not implemented")
+
+        def addManager(self, current=None):
+            raise NotImplementedError("servant method 'addManager' not implemented")
+
+        def removeManager(self, apiKey, current=None):
+            raise NotImplementedError("servant method 'removeManager' not implemented")
+
+        def listTokens(self, current=None):
+            raise NotImplementedError("servant method 'listTokens' not implemented")
+
+        def listManagers(self, current=None):
+            raise NotImplementedError("servant method 'listManagers' not implemented")
+
+        def __str__(self):
+            return IcePy.stringify(self, _M_StreamingServer._t_SecurityManagerDisp)
+
+        __repr__ = __str__
+
+    _M_StreamingServer._t_SecurityManagerDisp = IcePy.defineClass('::StreamingServer::SecurityManager', SecurityManager, (), None, ())
+    SecurityManager._ice_type = _M_StreamingServer._t_SecurityManagerDisp
+
+    SecurityManager._op_addToken = IcePy.Operation('addToken', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_string, False, 0), ())
+    SecurityManager._op_removeToken = IcePy.Operation('removeToken', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())
+    SecurityManager._op_addManager = IcePy.Operation('addManager', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), IcePy._t_string, False, 0), ())
+    SecurityManager._op_removeManager = IcePy.Operation('removeManager', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())
+    SecurityManager._op_listTokens = IcePy.Operation('listTokens', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), _M_StreamingServer._t_tokenList, False, 0), ())
+    SecurityManager._op_listManagers = IcePy.Operation('listManagers', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), _M_StreamingServer._t_managerList, False, 0), ())
+
+    _M_StreamingServer.SecurityManager = SecurityManager
+    del SecurityManager
 
 # End of module StreamingServer

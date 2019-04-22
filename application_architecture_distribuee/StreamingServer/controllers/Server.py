@@ -6,7 +6,6 @@ class ServerI(StreamingServer.Server):
     def __init__(self):
         self.db = Client()
         self.dbData = self.db.data
-        self.dbSecurity = self.db.security
 
     def search(self, key, value, current=None):
         return self._findToTrackSequence(self.dbData.tracks.find({key : value}))

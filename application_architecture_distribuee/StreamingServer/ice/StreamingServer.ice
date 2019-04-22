@@ -18,7 +18,7 @@ module StreamingServer {
     interface Server {
         trackSequence search(string key, string value);
         trackSequence list();
-        string play(Track track);
+        string play(Track track, string apiKey);
         Status add(Track track);
         Status remove(Track track);
     }
@@ -29,14 +29,19 @@ module StreamingServer {
     }
 
     class Manager {
-        string api_key;
+        string apiKey;
     }
 
+    sequence<Token> tokenList;
+    sequence<Manager> managerList;
+
     interface SecurityManager {
-        string addtoken(string file, string token);
+        string addToken(string file);
         bool removeToken(string token);
         string addManager();
         bool removeManager(string apiKey);
+        tokenList listTokens();
+        managerList listManagers();
     }
 }
     
