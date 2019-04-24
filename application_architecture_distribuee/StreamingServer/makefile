@@ -12,3 +12,9 @@ run_library_manager:
 
 run_security_manager:
 	python3 securityManager.py
+
+run_nodemon_server:
+	nodemon --exec python3 iceServer.py
+
+run_web_server:
+	python3 server.py

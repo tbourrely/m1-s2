@@ -9,12 +9,12 @@ with Ice.initialize(sys.argv) as communicator:
     if not server:
         raise RuntimeError("Invalid proxy")
 
-    menu = "========\nOptions:\n1) Add Track\n2) Remove Track\n3) Search Track\n4) List Tracks\n5) Exit\n========"
+    menu = "========\nOptions:\n1) Add Track\n2) Remove Track\n3) Search Track\n4) List Tracks\n5) Play\n6) Exit\n========"
     print(menu)
 
     choice = int(input("Choice : "))
 
-    while (5 != choice) :
+    while (6 != choice) :
 
         if 1 == choice:
             title = input('Title : ')
@@ -67,6 +67,23 @@ with Ice.initialize(sys.argv) as communicator:
                 print("Path : " + item.path)
                 print("-----------------------")
             print("=====================")
+        
+        elif 5 == choice:
+            path = input('path : ')
+            apiKey = input('apiKey : ')
+            result = server.search('path', path)
+
+            if len(result) == 1:
+                item = result[0]
+                playResult = server.play(item, apiKey)
+                text = playResult if playResult != "-1" else "Fail"
+                print(text)
+
+            elif len(result) > 1:
+                print('Multiple matches ?!?')
+
+            else:
+                print('No match')
 
         input('Press any key to continue')
         print(menu)

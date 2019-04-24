@@ -1,5 +1,7 @@
+import os
 from http import HTTPStatus
 from database.Client import Client
+import components.Token as Token
 import StreamingServer
 
 class ServerI(StreamingServer.Server):
@@ -28,7 +30,16 @@ class ServerI(StreamingServer.Server):
         return self._findToTrackSequence(self.dbData.tracks.find())
 
     def play(self, track, apiKey, current=None):
-        raise NotImplementedError("servant method 'play' not implemented")
+        creationResult = Token.create(track.path, apiKey)
+
+        if (
+            creationResult != "-1" and
+            creationResult != "-2" and
+            creationResult != "-3"
+        ):
+            return os.getenv('HOST') + '/stream/' + track.path + '?token=' + creationResult
+        else:
+            return "-1"
 
     def add(self, track, current=None):
         """Add a track
