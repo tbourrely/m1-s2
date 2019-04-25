@@ -1,5 +1,5 @@
 from flask import Flask, request, Response
-import os
+import os, base64
 from pathlib import Path  # python3 only
 from dotenv import load_dotenv
 from controllers.utils import doesFileExists
@@ -20,8 +20,9 @@ def streamFile(fileName):
 
         r.close()
 
-@app.route("/stream/<string:filename>", methods=['GET'])
-def stream(filename):
+@app.route("/stream/<string:encodedFileName>", methods=['GET'])
+def stream(encodedFileName):
+    filename = base64.b64decode(encodedFileName.encode()).decode()
     fileExists = doesFileExists(filename)
 
     if not fileExists:

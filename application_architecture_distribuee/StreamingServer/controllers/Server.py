@@ -2,6 +2,8 @@ import os
 from http import HTTPStatus
 from database.Client import Client
 import components.Token as Token
+from controllers.utils import doesFileExists
+import base64
 import StreamingServer
 
 class ServerI(StreamingServer.Server):
@@ -37,7 +39,10 @@ class ServerI(StreamingServer.Server):
             creationResult != "-2" and
             creationResult != "-3"
         ):
-            return os.getenv('HOST') + '/stream/' + track.path + '?token=' + creationResult
+            encodedPath = track.path.encode()
+            b64string = base64.b64encode(encodedPath).decode()
+
+            return os.getenv('HOST') + '/stream/' + b64string + '?token=' + creationResult
         else:
             return "-1"
 
@@ -51,6 +56,11 @@ class ServerI(StreamingServer.Server):
             StreamingServer.Status -- 200 if ok
                                       304 otherwise
         """
+        fileExists = doesFileExists(track.path)
+
+        if not fileExists:
+            return StreamingServer.Status(HTTPStatus.BAD_REQUEST.value, HTTPStatus.BAD_REQUEST.phrase) # file does not exists
+
         result = self.dbData.tracks.insert_one({
             'title': track.title,
             'artist': track.artist,
