@@ -2,11 +2,12 @@ from flask import Flask, request, Response
 import os, base64
 from pathlib import Path  # python3 only
 from dotenv import load_dotenv
-from controllers.utils import doesFileExists
-from database.Client import Client
 
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
+
+from database.Client import Client
+from controllers.utils import doesFileExists
 
 app = Flask(__name__)
 
@@ -20,7 +21,7 @@ def streamFile(fileName):
 
         r.close()
 
-@app.route("/stream/<string:encodedFileName>", methods=['GET'])
+@app.route("/stream/<string:encodedFileName>")
 def stream(encodedFileName):
     filename = base64.b64decode(encodedFileName.encode()).decode()
     fileExists = doesFileExists(filename)
@@ -37,12 +38,9 @@ def stream(encodedFileName):
 
     if tokenFromDB is None:
         return Response(status=401)
-
-    print(tokenFromDB)
-    
     # TODO
     # delete token ?
     return Response(streamFile(filename), mimetype="audio/aac")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, port=5000, host=('0.0.0.0'))
