@@ -1,16 +1,17 @@
 version: '3.7'
 services:
   mongodb:
-    image: mongo
+    build: ./mongo
     container_name: mongodb
     ports:
       - "27017:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: streamingserver
       MONGO_INITDB_ROOT_PASSWORD: wEjjASLg5Jsqjtcv
+      MONGO_INITDB_DATABASE: admin
 
   app:
-    build: .
+    build: ./app
     container_name: app
     ports:
       - "10000:10000"
