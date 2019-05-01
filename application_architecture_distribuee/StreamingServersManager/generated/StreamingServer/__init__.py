@@ -2,9 +2,9 @@
 #
 
 import Ice
-Ice.updateModule("StreamingServerManager")
+Ice.updateModule("StreamingServer")
 
 # Modules:
-import StreamingServersManager_ice
+import StreamingServer_ice
 
 # Submodules:

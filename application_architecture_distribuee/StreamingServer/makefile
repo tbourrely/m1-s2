@@ -18,3 +18,9 @@ run_nodemon_server:
 
 run_web_server:
 	python3 server.py
+
+docker_build:
+	docker build -t streamingserver .
+
+docker_run:
+	docker run --rm -p 10000:10000 -p 5000:5000 streamingserver
