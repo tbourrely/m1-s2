@@ -42,5 +42,9 @@ def stream(encodedFileName):
     # delete token ?
     return Response(streamFile(filename), mimetype="audio/aac")
 
+@app.route('/')
+def hello():
+    return Response('Hello !')
+
 if __name__ == '__main__':
     app.run(debug=False, port=5000, host=('0.0.0.0'))
