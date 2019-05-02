@@ -8,7 +8,7 @@ env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 
 # controllers
-from controllers import Servers
+from controllers import Servers, Tracks
 
 app = Flask(__name__)
 
@@ -20,6 +20,10 @@ def handleServers():
         return Servers.post()
     else:
         return Servers.delete()
+
+@app.route('/tracks', methods=['GET'])
+def handleTracks():
+    return Tracks.get()
 
 @app.route('/tracks/index', methods=['GET'])
 def handleTracksIndex():
