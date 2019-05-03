@@ -31,5 +31,25 @@ export default {
 
     const RELEASE_ID = responseData["release-groups"][0]["id"];
     return `http://coverartarchive.org/release-group/${RELEASE_ID}/front-250`;
+  },
+
+  async fetchStreamingLink(title = "", artist = "", album = "") {
+    try {
+      let formData = new FormData();
+      formData.append("title", title);
+      formData.append("artist", artist);
+      formData.append("album", album);
+
+      let response = await fetch(URI + "/play", {
+        method: "POST",
+        body: formData
+      });
+
+      let responseData = await response.json();
+
+      return responseData;
+    } catch (e) {
+      console.log(e);
+    }
   }
 };

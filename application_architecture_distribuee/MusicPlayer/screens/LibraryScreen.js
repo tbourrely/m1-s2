@@ -4,7 +4,7 @@ import {
   StyleSheet,
   FlatList,
   View,
-  Text,
+  Alert,
   TouchableOpacity
 } from "react-native";
 import FlatListItem from "./../components/FlatListItem";
@@ -29,8 +29,20 @@ export default class LibraryScreen extends React.Component {
       artist={item.artist}
       album={item.album}
       cover={item.cover}
+      pressHandler={this._handleItemClick.bind(this)}
     />
   );
+
+  _handleItemClick = async (title, artist, album) => {
+    let data = await ajax.fetchStreamingLink(title, artist, album);
+    if (data["nbTracks"] === 1) {
+      this.props.navigation.navigate("HomeStack", {
+        streamingUrl: data["tracks"][0]
+      });
+    } else {
+      Alert.alert("", "Could not play track");
+    }
+  };
 
   async componentDidMount() {
     let tracks = await ajax.fetchTracks(); // fetch the tracks list

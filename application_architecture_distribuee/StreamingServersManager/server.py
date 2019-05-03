@@ -30,7 +30,7 @@ def handleTracksIndex():
     subprocess.Popen([sys.executable, "runIndexer.py"])
     return Response('indexing started')
 
-@app.route('/play', methods=['GET'])
+@app.route('/play', methods=['POST'])
 def handlePlay():
     return Tracks.play()
 
