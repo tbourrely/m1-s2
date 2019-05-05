@@ -253,6 +253,7 @@ export default class HomeScreen extends React.Component {
       <TouchableOpacity
         style={styles.mediaButtonsPlayPause}
         onPress={this._togglePlaying.bind(this)}
+        onLongPress={this._handleStopPress.bind(this)}
       >
         <MaterialIcons
           name={playPauseIcon}
@@ -295,10 +296,6 @@ export default class HomeScreen extends React.Component {
           </TouchableOpacity>
 
           {middleButton}
-
-          <TouchableOpacity onPress={this._handleStopPress.bind(this)}>
-            <MaterialIcons name="stop" size={50} color={colors.playerIcon} />
-          </TouchableOpacity>
 
           <TouchableOpacity
             onPress={() =>
