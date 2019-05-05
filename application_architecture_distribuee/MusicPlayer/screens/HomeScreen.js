@@ -42,7 +42,13 @@ export default class HomeScreen extends React.Component {
       recording: false,
       playing: false,
       audioPermission: false,
-      currentStreamingUrl: null
+      currentStreamingData: {
+        artist: null,
+        title: null,
+        album: null,
+        cover: null,
+        streamingLink: null
+      }
     };
 
     this.recorder = null;
@@ -55,6 +61,41 @@ export default class HomeScreen extends React.Component {
         this._askAudioPermission();
       } else {
         this.setAudioPermission(true);
+      }
+    });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (
+      this.state.currentStreamingData.streamingLink !== null &&
+      prevState.currentStreamingData.streamingLink !==
+        this.state.currentStreamingData.streamingLink
+    ) {
+      this._stopPlaying();
+      this._startPlaying();
+    }
+  }
+
+  _updateCurrentStreamingData(trackUrl, title, artist, album, coverUrl) {
+    this.setState({
+      currentStreamingData: {
+        title: title,
+        artist: artist,
+        album: album,
+        cover: coverUrl,
+        streamingLink: trackUrl
+      }
+    });
+  }
+
+  _resetCurrentStreamingData() {
+    this.setState({
+      currentStreamingData: {
+        title: null,
+        artist: null,
+        album: null,
+        cover: null,
+        streamingLink: null
       }
     });
   }
@@ -89,6 +130,11 @@ export default class HomeScreen extends React.Component {
     } else {
       this._askAudioPermission();
     }
+  }
+
+  _handleStopPress() {
+    this._stopPlaying();
+    this._resetCurrentStreamingData();
   }
 
   async _startRecording() {
@@ -131,59 +177,73 @@ export default class HomeScreen extends React.Component {
     }
   }
 
-  async _startPlaying() {
+  async _startPlayer() {
+    if (null === this.state.currentStreamingData.streamingLink) {
+      throw "Null can't be played !";
+    }
+
     if (null === this.player) {
       this.player = new Audio.Sound();
-      try {
-        await this.player.loadAsync({
-          uri:
-            "http://172.18.99.2:5000/stream/ZW1pbmVtL3Jldml2YWwvYXJvc2UuYWFj?token=oW4BMfXypNjPd9VWR6x7lklZUdQNJE97"
-        });
-      } catch (e) {
-        Alert.alert("", "An error occured, impossible to load player");
-      }
+      await this.player.loadAsync({
+        uri: this.state.currentStreamingData.streamingLink
+      });
     }
 
-    try {
-      await this.player.playAsync();
-    } catch (e) {
-      Alert.alert("", "An error occured, impossible to play");
-      console.log(e);
-    }
+    if (null !== this.player) await this.player.playAsync();
   }
 
-  _stopPlaying() {
+  _pausePlayer() {
     if (null !== this.player) {
       this.player.pauseAsync();
     }
+  }
+
+  _stopPlayer() {
+    if (null !== this.player) {
+      this.player.stopAsync();
+      this.player = null;
+    }
+  }
+
+  async _startPlaying() {
+    try {
+      await this._startPlayer();
+      this.setPlaying(true);
+    } catch (e) {
+      /* do not do anything ! */
+    }
+  }
+
+  _pausePlaying() {
+    this._pausePlayer();
+    this.setPlaying(false);
+  }
+
+  _stopPlaying() {
+    this._stopPlayer();
+    this.setPlaying(false);
   }
 
   _togglePlaying() {
     playingState = !this.state.playing;
 
     if (playingState) {
-      // must play
-      //   Alert.alert("Must play...");
       this._startPlaying();
     } else {
-      // must stop
-      //   Alert.alert("Must stop playing");
-      this._stopPlaying();
+      this._pausePlaying();
     }
-
-    this.setPlaying(playingState);
   }
 
   render() {
-    Alert.alert("", this.props.navigation.params || "");
     const micIcon = this.state.recording ? "stop" : "mic-none";
 
     const playPauseIcon = this.state.playing ? "pause" : "play-arrow";
 
     const imgURI =
-      "https://m.media-amazon.com/images/I/71fC8ZDzrnL._SS500_.jpg";
-    const title = "A Million on My Soul";
-    const artist = "Alexiane";
+      this.state.currentStreamingData.cover ||
+      "http://dalelyles.com/musicmp3s/no_cover.jpg";
+    const title = this.state.currentStreamingData.title || "-";
+    const artist = this.state.currentStreamingData.artist || "-";
 
     const middleButton = this.state.recording ? (
       <View style={styles.mediaButtonsPlayPause}>
@@ -236,9 +296,18 @@ export default class HomeScreen extends React.Component {
 
           {middleButton}
 
+          <TouchableOpacity onPress={this._handleStopPress.bind(this)}>
+            <MaterialIcons name="stop" size={50} color={colors.playerIcon} />
+          </TouchableOpacity>
+
           <TouchableOpacity
-            style={styles.mediaButtonsPlayPause}
-            onPress={() => this.props.navigation.navigate("LinksStack")}
+            onPress={() =>
+              this.props.navigation.navigate("Links", {
+                updateCurrentStreamingData: this._updateCurrentStreamingData.bind(
+                  this
+                )
+              })
+            }
           >
             <MaterialIcons name="list" size={50} color={colors.playerIcon} />
           </TouchableOpacity>
@@ -307,10 +376,9 @@ const styles = StyleSheet.create({
   mediaButtonsWrapper: {
     flex: 1,
     flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  mediaButtonsPlayPause: {
-    marginLeft: 80
+    justifyContent: "space-around",
+    alignItems: "center",
+    paddingLeft: 20,
+    paddingRight: 20
   }
 });

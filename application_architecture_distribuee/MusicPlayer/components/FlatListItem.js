@@ -11,7 +11,8 @@ export default class FlatListItem extends React.PureComponent {
     this.props.pressHandler(
       this.props.title,
       this.props.artist,
-      this.props.album
+      this.props.album,
+      this.props.cover
     );
   }
 

@@ -33,12 +33,17 @@ export default class LibraryScreen extends React.Component {
     />
   );
 
-  _handleItemClick = async (title, artist, album) => {
+  _handleItemClick = async (title, artist, album, cover) => {
     let data = await ajax.fetchStreamingLink(title, artist, album);
     if (data["nbTracks"] === 1) {
-      this.props.navigation.navigate("HomeStack", {
-        streamingUrl: data["tracks"][0]
-      });
+      this.props.navigation.state.params.updateCurrentStreamingData(
+        data["tracks"][0],
+        title,
+        artist,
+        album,
+        cover
+      );
+      this.props.navigation.navigate("Home");
     } else {
       Alert.alert("", "Could not play track");
     }
@@ -71,7 +76,7 @@ export default class LibraryScreen extends React.Component {
 
         <TouchableOpacity
           style={styles.goToPlayerButton}
-          onPress={() => this.props.navigation.navigate("HomeStack")}
+          onPress={() => this.props.navigation.navigate("Home")}
         >
           <MaterialIcons name="album" size={40} color={colors.playerIcon} />
         </TouchableOpacity>
