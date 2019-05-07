@@ -1,7 +1,10 @@
-const ACCESS_TOKEN="UOHJI4SSJ4C3AFIUDBTXX5TFGMWC3KQH";
-const WIT_ENDPOINT_SPEECH="https://api.wit.ai/speech";
-
 export default {
+    /**
+     * Send the file to the StreamingServersManager throught it's API
+     * The manager will in it's turn contact WIT.AI and return the response to the app
+     * 
+     * @param {Object} file 
+     */
     async getIntentFromAudio(file) {
         try {
             let form = new FormData();

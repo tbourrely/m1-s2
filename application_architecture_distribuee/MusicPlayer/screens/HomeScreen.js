@@ -21,21 +21,6 @@ export default class HomeScreen extends React.Component {
     header: null
   };
 
-  // static RECORDING_OPTIONS = {
-  //   android: {
-  //     extension: ".aac",
-  //     outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_AAC_ADTS,
-  //     audioEncoder: Audio.RECORDING_OPTION_ANDROID_AUDIO_ENCODER_AAC
-  //   },
-  //   ios: {
-  //     extension: ".wav",
-  //     audioQuality: Audio.RECORDING_OPTION_IOS_AUDIO_QUALITY_MAX,
-  //     sampleRate: 44100,
-  //     numberOfChannels: 2,
-  //     bitRate: 128000
-  //   }
-  // };
-
   constructor(props) {
     super(props);
 
@@ -138,6 +123,62 @@ export default class HomeScreen extends React.Component {
     this._resetCurrentStreamingData();
   }
 
+  _handleWitResponse(response) {
+    console.log(response);
+
+    if (response['entities'] !== undefined && Object.keys(response['entities']).length) {
+      const $entities = response['entities'];
+      const entitiesLength = Object.keys(response['entities']).length
+
+      if ($entities['intent'] === undefined) {
+        Alert.alert("", "Sorry, i did not understand your request !");
+        return;
+      }
+
+      const intentList = $entities['intent'];
+
+      // get the intent with the highest confidence level
+      const intent = intentList.reduce((acc, curr) => {
+        if (acc === undefined)
+          return curr;
+        
+        if (curr.confidence > acc.confidence)
+          return curr;
+
+        else return acc;
+      });
+
+      switch(intent.value) {
+        case "pause":
+          this._pausePlaying();
+          break;
+
+        case "stop":
+          this._stopPlaying();
+          this._resetCurrentStreamingData();
+          break;
+
+        case "next":
+          // next
+          break;
+
+        case "previous":
+          // previous
+          break;
+
+        case "play":
+          if (entitiesLength === 1) {
+            this._startPlaying();
+          }
+          break;
+
+        default:
+          Alert.alert("", "Sorry, i did not understand your request !");
+          break;
+      }
+    }
+  }
+
   async _startRecording() {
     if (null === this.recorder) {
       this.recorder = new Audio.Recording();
@@ -165,10 +206,8 @@ export default class HomeScreen extends React.Component {
           if (status.isDoneRecording) {
             this.recorder = null;
             this.setRecording(false);
-
-            wit.getIntentFromAudio({uri, name: 'test', 'type': 'audio/3gpp'}).then((resp) => {
-              console.log(resp);
-            });
+            
+            wit.getIntentFromAudio({uri, name: 'test', 'type': 'audio/3gpp'}).then(resp => this._handleWitResponse(resp));
           }
         });
       } catch (e) {
