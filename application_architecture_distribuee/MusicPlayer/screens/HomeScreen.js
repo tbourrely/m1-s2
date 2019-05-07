@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import Slider from "react-native-slider";
 import { Audio, Permissions, FileSystem } from "expo";
+import wit from "../services/wit";
 
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -20,20 +21,20 @@ export default class HomeScreen extends React.Component {
     header: null
   };
 
-  static RECORDING_OPTIONS = {
-    android: {
-      extension: ".wav",
-      outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_MPEG_4,
-      audioEncoder: Audio.RECORDING_OPTION_ANDROID_AUDIO_ENCODER_DEFAULT
-    },
-    ios: {
-      extension: ".wav",
-      audioQuality: Audio.RECORDING_OPTION_IOS_AUDIO_QUALITY_MAX,
-      sampleRate: 44100,
-      numberOfChannels: 2,
-      bitRate: 128000
-    }
-  };
+  // static RECORDING_OPTIONS = {
+  //   android: {
+  //     extension: ".aac",
+  //     outputFormat: Audio.RECORDING_OPTION_ANDROID_OUTPUT_FORMAT_AAC_ADTS,
+  //     audioEncoder: Audio.RECORDING_OPTION_ANDROID_AUDIO_ENCODER_AAC
+  //   },
+  //   ios: {
+  //     extension: ".wav",
+  //     audioQuality: Audio.RECORDING_OPTION_IOS_AUDIO_QUALITY_MAX,
+  //     sampleRate: 44100,
+  //     numberOfChannels: 2,
+  //     bitRate: 128000
+  //   }
+  // };
 
   constructor(props) {
     super(props);
@@ -143,7 +144,7 @@ export default class HomeScreen extends React.Component {
     }
 
     try {
-      await this.recorder.prepareToRecordAsync(HomeScreen.RECORDING_OPTIONS);
+      await this.recorder.prepareToRecordAsync(Audio.RECORDING_OPTIONS_PRESET_LOW_QUALITY);
 
       this.recorder.startAsync().then(status => {
         if (status.isRecording) {
@@ -164,11 +165,10 @@ export default class HomeScreen extends React.Component {
           if (status.isDoneRecording) {
             this.recorder = null;
             this.setRecording(false);
-            // Alert.alert("recording", "stoped");
-            //
-            // FileSystem.getInfoAsync(uri).then(res => {
-            //     console.log(res);
-            // });
+
+            wit.getIntentFromAudio({uri, name: 'test', 'type': 'audio/3gpp'}).then((resp) => {
+              console.log(resp);
+            });
           }
         });
       } catch (e) {
