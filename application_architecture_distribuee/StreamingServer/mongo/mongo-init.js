@@ -26,6 +26,30 @@ const trackList = [
         artist: 'eminem',
         album: 'revival',
         path: 'eminem/revival/believe.aac'
+    },
+    {
+        title: 'Dead inside',
+        artist: 'Muse',
+        album: 'Drones',
+        path: 'Muse/Drones/dead_inside.mp3'
+    },
+    {
+        title: 'Drill Sergeant',
+        artist: 'Muse',
+        album: 'Drones',
+        path: 'Muse/Drones/drill_sergeant.mp3'
+    },
+    {
+        title: 'Mercy',
+        artist: 'Muse',
+        album: 'Drones',
+        path: 'Muse/Drones/mercy.mp3'
+    },
+    {
+        title: 'Psycho',
+        artist: 'Muse',
+        album: 'Drones',
+        path: 'Muse/Drones/psycho.mp3'
     }
 ];
 db.tracks.insertMany(trackList);

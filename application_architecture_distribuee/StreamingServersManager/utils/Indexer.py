@@ -82,7 +82,7 @@ def connectAndList(serverIp, port):
                     else:
                         logger.write('--> could not insert')
 
-        except Ice.ConnectFailedException:
+        except:
             logger.write('could not connect to server')
 
 # --------------------------------------------------------------------------------------------------

@@ -137,8 +137,8 @@ export default class HomeScreen extends React.Component {
 
       const intentList = $entities['intent'];
 
-      // get the intent with the highest confidence level
-      const intent = intentList.reduce((acc, curr) => {
+      // reducer that reduce to the item with the highest confidence level
+      const highestConfidenceLevel = (acc, curr) => {
         if (acc === undefined)
           return curr;
         
@@ -146,7 +146,10 @@ export default class HomeScreen extends React.Component {
           return curr;
 
         else return acc;
-      });
+      };
+
+      // get the intent with the highest confidence level
+      const intent = intentList.reduce(highestConfidenceLevel);
 
       switch(intent.value) {
         case "pause":
@@ -169,7 +172,15 @@ export default class HomeScreen extends React.Component {
         case "play":
           if (entitiesLength === 1) {
             this._startPlaying();
-          }
+            return;
+          } 
+
+          const artist = $entities['artist'].reduce(highestConfidenceLevel) || "";
+          const title = $entities['track'].reduce(highestConfidenceLevel) || "";
+          const album = $entities['album'].reduce(highestConfidenceLevel) || "";
+
+          console.log(artist, title, album);
+
           break;
 
         default:
@@ -190,7 +201,6 @@ export default class HomeScreen extends React.Component {
       this.recorder.startAsync().then(status => {
         if (status.isRecording) {
           this.setRecording(true);
-          // Alert.alert("recording", "started");
         }
       });
     } catch (e) {
@@ -315,7 +325,7 @@ export default class HomeScreen extends React.Component {
           </View>
         </View>
 
-        <View style={styles.sliderWrapper}>
+        {/* <View style={styles.sliderWrapper}>
           <Slider
             minimumValue={0}
             maximumValue={100}
@@ -327,7 +337,7 @@ export default class HomeScreen extends React.Component {
             trackStyle={styles.sliderTrack}
             thumbStyle={styles.sliderThumb}
           />
-        </View>
+        </View> */}
 
         <View style={styles.mediaButtonsWrapper}>
           <TouchableOpacity onPress={this._handleRecorderPress.bind(this)}>
