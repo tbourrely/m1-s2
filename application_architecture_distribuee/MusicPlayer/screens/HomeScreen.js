@@ -15,6 +15,7 @@ import wit from "../services/wit";
 import { MaterialIcons } from "@expo/vector-icons";
 
 import colors from "./../theme/colors";
+import config from './../theme/config';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -123,7 +124,7 @@ export default class HomeScreen extends React.Component {
     this._resetCurrentStreamingData();
   }
 
-  _handleWitResponse(response) {
+  async _handleWitResponse(response) {
     console.log(response);
 
     if (response['entities'] !== undefined && Object.keys(response['entities']).length) {
@@ -180,6 +181,16 @@ export default class HomeScreen extends React.Component {
           const album = $entities['album'].reduce(highestConfidenceLevel) || "";
 
           console.log(artist, title, album);
+
+          const data = await ajax.fetchStreamingLink(
+            title,
+            artist,
+            album
+          );
+
+          console.log(data);
+
+          // TODO: handle links
 
           break;
 
@@ -290,7 +301,7 @@ export default class HomeScreen extends React.Component {
 
     const imgURI =
       this.state.currentStreamingData.cover ||
-      "http://dalelyles.com/musicmp3s/no_cover.jpg";
+      config.DEFAULT_IMG_URL;
     const title = this.state.currentStreamingData.title || "-";
     const artist = this.state.currentStreamingData.artist || "-";
 
