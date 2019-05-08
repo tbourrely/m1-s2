@@ -42,6 +42,7 @@ export default class LibraryScreen extends React.Component {
         title,
         artist,
         album,
+        true
       );
       this.props.navigation.navigate("Home");
     } else {

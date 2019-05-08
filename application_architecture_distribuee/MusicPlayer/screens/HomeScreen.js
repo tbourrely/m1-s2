@@ -39,7 +39,7 @@ export default class HomeScreen extends React.Component {
       }
     };
 
-    this.history = []; // all the played tracks, cleaned on 'stop'
+    this.history = []; // previous tracks (only when multiple tracks are returned from the 'play' request)
     this.followingTracks = []; // following tracks (only when multiple tracks are returned from the 'play' request)
 
     this.recorder = null;
@@ -67,7 +67,12 @@ export default class HomeScreen extends React.Component {
     }
   }
 
-  async _updateCurrentStreamingData(trackUrl, title, artist, album) {
+  async _updateCurrentStreamingData(trackUrl, title, artist, album, cleanHistoryAndFollowing = false) {
+    if (cleanHistoryAndFollowing === true) {
+      this._resetHistory();
+      this._resetFollowingTracks();
+    }
+
     coverUrl = await ajax.fetchCover({album: album, artist: artist});
     this.setState({
       currentStreamingData: {
@@ -261,6 +266,9 @@ export default class HomeScreen extends React.Component {
       return;
     }
 
+    this._resetHistory();
+    track = response.tracks[0];
+    
     // set the following tracks with the new correct value
     // if one song is retrieved, no following tracks
     // otherwise, all the retrieved tracks except the first are the following tracks
@@ -271,7 +279,6 @@ export default class HomeScreen extends React.Component {
       this.followingTracks = response.tracks;
     }
     
-    track = response.tracks[0];
     // play the first retrieved track
     this._updateCurrentStreamingData(
       track.link,
@@ -440,9 +447,7 @@ export default class HomeScreen extends React.Component {
           <TouchableOpacity
             onPress={() =>
               this.props.navigation.navigate("Links", {
-                updateCurrentStreamingData: this._updateCurrentStreamingData.bind(
-                  this
-                )
+                updateCurrentStreamingData: this._updateCurrentStreamingData.bind(this)
               })
             }
           >
