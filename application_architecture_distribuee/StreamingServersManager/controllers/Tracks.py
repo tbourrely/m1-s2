@@ -67,8 +67,14 @@ def play():
         return jsonify({'nbTracks': 0, 'tracks': []})
 
     if len(matchingTracks) == 1:
+        track = matchingTracks[0]
         return jsonify({'nbTracks': 1, 'tracks': [
-            requestLink(matchingTracks[0].get('servers')[0], matchingTracks[0])
+            {
+                'title': track.get('title'),
+                'artist': track.get('artist'),
+                'album': track.get('album'),
+                'link': requestLink(track.get('servers')[0], track)
+            }
         ]}) # take the first server as we only want to play one track
     
     linksList = []
@@ -78,7 +84,13 @@ def play():
             link = requestLink(s, track)
 
             if link:
-                linksList.append(link)
+                resultingObject = {
+                    'title': track.get('title'),
+                    'artist': track.get('artist'),
+                    'album': track.get('album'),
+                    'link': link
+                }
+                linksList.append(resultingObject)
                 break
 
                 

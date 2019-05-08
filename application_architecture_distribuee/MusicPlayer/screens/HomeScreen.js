@@ -8,9 +8,10 @@ import {
   Alert,
   ActivityIndicator
 } from "react-native";
-import Slider from "react-native-slider";
+
 import { Audio, Permissions, FileSystem } from "expo";
 import wit from "../services/wit";
+import ajax from "./../services/fetchData";
 
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -26,10 +27,10 @@ export default class HomeScreen extends React.Component {
     super(props);
 
     this.state = {
-      recording: false,
-      playing: false,
-      audioPermission: false,
-      currentStreamingData: {
+      recording: false, // is it recording ?
+      playing: false, // is a track playing ?
+      audioPermission: false, // does this app has audio permissions ?
+      currentStreamingData: { // currenty played track
         artist: null,
         title: null,
         album: null,
@@ -37,6 +38,9 @@ export default class HomeScreen extends React.Component {
         streamingLink: null
       }
     };
+
+    this.history = []; // all the played tracks, cleaned on 'stop'
+    this.followingTracks = []; // following tracks (only when multiple tracks are returned from the 'play' request)
 
     this.recorder = null;
     this.player = null;
@@ -63,7 +67,8 @@ export default class HomeScreen extends React.Component {
     }
   }
 
-  _updateCurrentStreamingData(trackUrl, title, artist, album, coverUrl) {
+  async _updateCurrentStreamingData(trackUrl, title, artist, album) {
+    coverUrl = await ajax.fetchCover({album: album, artist: artist});
     this.setState({
       currentStreamingData: {
         title: title,
@@ -99,6 +104,14 @@ export default class HomeScreen extends React.Component {
     this.setState({ playing: playingStatus });
   }
 
+  _resetHistory() {
+    this.history = [];
+  }
+
+  _resetFollowingTracks() {
+    this.followingTracks = [];
+  }
+
   _askAudioPermission() {
     Permissions.askAsync(Permissions.AUDIO_RECORDING).then(({ status }) => {
       if (status === "granted") {
@@ -122,6 +135,8 @@ export default class HomeScreen extends React.Component {
   _handleStopPress() {
     this._stopPlaying();
     this._resetCurrentStreamingData();
+    this._resetHistory();
+    this._resetFollowingTracks();
   }
 
   async _handleWitResponse(response) {
@@ -160,38 +175,76 @@ export default class HomeScreen extends React.Component {
         case "stop":
           this._stopPlaying();
           this._resetCurrentStreamingData();
+          this._resetHistory();
+          this._resetFollowingTracks();
           break;
 
         case "next":
-          // next
+          if (!this.followingTracks.length) {
+            Alert.alert('', "No following tracks");
+            return;
+          }
+
+          // push the current track to the history
+          currentTrack = this.state.currentStreamingData;
+          this.history.push({
+            link: currentTrack.streamingLink,
+            artist: currentTrack.artist,
+            title: currentTrack.title,
+            album: currentTrack.album
+          });
+
+          // play the following track
+          track = this.followingTracks.shift();
+          this._updateCurrentStreamingData(
+            track.link,
+            track.title,
+            track.artist,
+            track.album
+          );
           break;
 
         case "previous":
-          // previous
+          if (!this.history.length) {
+            Alert.alert('', "No previous track");
+            return;
+          }
+
+          // set the the next track as the current one
+          currentTrack = this.state.currentStreamingData;
+          this.followingTracks.unshift({
+            link: currentTrack.streamingLink,
+            artist: currentTrack.artist,
+            title: currentTrack.title,
+            album: currentTrack.album
+          });
+          
+          // set the current track as the previous one
+          track = this.history.pop();
+          this._updateCurrentStreamingData(
+            track.link,
+            track.title,
+            track.artist,
+            track.album
+          );
           break;
 
         case "play":
           if (entitiesLength === 1) {
             this._startPlaying();
             return;
-          } 
+          }
 
-          const artist = $entities['artist'].reduce(highestConfidenceLevel) || "";
-          const title = $entities['track'].reduce(highestConfidenceLevel) || "";
-          const album = $entities['album'].reduce(highestConfidenceLevel) || "";
-
-          console.log(artist, title, album);
+          const artist = undefined !== $entities['artist'] ? $entities['artist'].reduce(highestConfidenceLevel).value : "";
+          const title = undefined !== $entities['track'] ? $entities['track'].reduce(highestConfidenceLevel).value : "";
+          const album = undefined !== $entities['album'] ? $entities['album'].reduce(highestConfidenceLevel).value : "";
 
           const data = await ajax.fetchStreamingLink(
             title,
             artist,
             album
           );
-
-          console.log(data);
-
-          // TODO: handle links
-
+          this._handleStreamingServerResponse(data);
           break;
 
         default:
@@ -199,6 +252,33 @@ export default class HomeScreen extends React.Component {
           break;
       }
     }
+  }
+
+  async _handleStreamingServerResponse(response) {
+    console.log(response);
+    if (response.nbTracks === 0) {
+      Alert.alert('', "No match !");
+      return;
+    }
+
+    // set the following tracks with the new correct value
+    // if one song is retrieved, no following tracks
+    // otherwise, all the retrieved tracks except the first are the following tracks
+    if (response.nbTracks === 1) {
+      this.followingTracks = [];
+    } else {
+      response.tracks.shift();
+      this.followingTracks = response.tracks;
+    }
+    
+    track = response.tracks[0];
+    // play the first retrieved track
+    this._updateCurrentStreamingData(
+      track.link,
+      track.title,
+      track.artist,
+      track.album
+    );
   }
 
   async _startRecording() {

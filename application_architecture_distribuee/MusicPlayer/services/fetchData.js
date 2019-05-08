@@ -21,11 +21,11 @@ export default {
    * @param {Object} track
    */
   async fetchCover(track) {
-    if (track.album === undefined) return config.DEFAULT_IMG_URL; // no album name => default img
+    if (track.album === undefined || track.album === null || !track.album.length) return config.DEFAULT_IMG_URL; // no album name => default img
 
     let releaseRequest = `http://musicbrainz.org/ws/2/release-group/?query=releasegroup:${track.album}`;
 
-    if (track.artist !== undefined)
+    if (track.artist !== undefined && track.artist !== null && track.artist.length)
       releaseRequest += `%20AND%20artist:${track.artist}`;
 
     releaseRequest += "%20AND%20type:album&fmt=json"; // we want json !!!! \0/
@@ -40,6 +40,12 @@ export default {
     return `http://coverartarchive.org/release-group/${RELEASE_ID}/front-250`;
   },
 
+  /**
+   * Fetch streaming links adapted to the given parameters
+   * @param {string} title 
+   * @param {string} artist 
+   * @param {string} album 
+   */
   async fetchStreamingLink(title = "", artist = "", album = "") {
     try {
       let formData = new FormData();

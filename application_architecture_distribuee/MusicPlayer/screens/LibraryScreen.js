@@ -33,15 +33,15 @@ export default class LibraryScreen extends React.Component {
     />
   );
 
-  _handleItemClick = async (title, artist, album, cover) => {
+  _handleItemClick = async (title, artist, album) => {
     let data = await ajax.fetchStreamingLink(title, artist, album);
     if (data["nbTracks"] === 1) {
+      track = data['tracks'][0]
       this.props.navigation.state.params.updateCurrentStreamingData(
-        data["tracks"][0],
+        track.link,
         title,
         artist,
         album,
-        cover
       );
       this.props.navigation.navigate("Home");
     } else {
