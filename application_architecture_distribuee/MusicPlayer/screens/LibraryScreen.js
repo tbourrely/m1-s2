@@ -2,10 +2,12 @@ import React from "react";
 import {
   ScrollView,
   StyleSheet,
-  FlatList,
   View,
   Alert,
-  TouchableOpacity
+  TouchableOpacity,
+  SectionList,
+  Text,
+  Picker
 } from "react-native";
 import FlatListItem from "./../components/FlatListItem";
 import colors from "./../theme/colors";
@@ -18,7 +20,10 @@ export default class LibraryScreen extends React.Component {
   };
 
   state = {
-    tracks: {}
+    tracks: {},
+    albumList: [],
+    artistList: [],
+    filter: 'artist'
   };
 
   _keyExtractor = (item, index) => item.path;
@@ -31,6 +36,10 @@ export default class LibraryScreen extends React.Component {
       cover={item.cover}
       pressHandler={this._handleItemClick.bind(this)}
     />
+  );
+
+  _renderSectionHeader = ({section: {title}}) => (
+    <Text style={styles.sectionHeader}>{title}</Text>
   );
 
   _handleItemClick = async (title, artist, album) => {
@@ -50,27 +59,62 @@ export default class LibraryScreen extends React.Component {
     }
   };
 
+  _filterByArtist = _ => {
+    return this.state.artistList.map(artistName => {
+      return {title: artistName, data: this.state.tracks.filter(track => track.artist === artistName)}
+    });
+  };
+  _filterByAlbum = _ => {
+    return this.state.albumList.map(albumName => {
+      return {title: albumName, data: this.state.tracks.filter(track => track.album === albumName)}
+    });
+  };
+
   async componentDidMount() {
     let tracks = await ajax.fetchTracks(); // fetch the tracks list
+    let artistList = [];
+    let albumList = [];
+
+
     // fetch and add the cover link to each track
     tracks = await Promise.all(
       tracks.map(async track => {
+        if (!artistList.includes(track.artist)) artistList.push(track.artist);
+        if (!albumList.includes(track.album)) albumList.push(track.album);
+
         track.cover = await ajax.fetchCover(track);
         return track;
       })
     );
-    this.setState({ tracks });
+
+    this.setState({ tracks, artistList, albumList });
   }
 
   render() {
+    let sections = [];
+
+    if (this.state.filter === 'album') sections = this._filterByAlbum();
+    if (this.state.filter === 'artist') sections = this._filterByArtist();
+
     return (
       <View style={{ flex: 1 }}>
         <ScrollView style={styles.container}>
+          <Picker
+            style={styles.picker}
+            selectedValue={this.state.filter}
+            onValueChange={value => this.setState({filter: value})}
+            mode={'dropdown'}
+          >
+            <Picker.Item label='Artist' value='artist'/>
+            <Picker.Item label='Album' value='album'/>
+          </Picker>
+          
           <View style={styles.flatListWrapper}>
-            <FlatList
-              data={this.state.tracks}
-              keyExtractor={this._keyExtractor}
+            <SectionList
               renderItem={this._renderItem}
+              keyExtractor={this._keyExtractor}
+              sections={sections}
+              renderSectionHeader={this._renderSectionHeader}
             />
           </View>
         </ScrollView>
@@ -92,12 +136,24 @@ const styles = StyleSheet.create({
     backgroundColor: colors.appBackground
   },
   flatListWrapper: {
-    paddingTop: 40,
+    paddingTop: 20,
     paddingBottom: 20
   },
   goToPlayerButton: {
     position: "absolute",
     bottom: 10,
     right: 10
+  },
+  picker: {
+    marginTop: 40,
+    marginLeft: 20,
+    width: 150,
+    height: 50
+  },
+  sectionHeader: {
+    fontWeight: 'bold',
+    fontSize: 30,
+    paddingLeft: 20,
+    paddingRight: 20
   }
 });
