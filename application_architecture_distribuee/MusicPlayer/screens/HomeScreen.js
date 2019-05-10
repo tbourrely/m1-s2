@@ -38,7 +38,9 @@ export default class HomeScreen extends React.Component {
         album: null,
         cover: null,
         streamingLink: null
-      }
+      },
+      previous: true,
+      next: true
     };
 
     this.history = []; // previous tracks (only when multiple tracks are returned from the 'play' request)
@@ -201,6 +203,10 @@ export default class HomeScreen extends React.Component {
             album: currentTrack.album
           });
 
+          if (this.history.length === 1) {
+            this.setState({previous: true});
+          }
+
           // play the following track
           track = this.followingTracks.shift();
           this._updateCurrentStreamingData(
@@ -279,6 +285,7 @@ export default class HomeScreen extends React.Component {
     } else {
       response.tracks.shift();
       this.followingTracks = response.tracks;
+      this.setState({next: true})
     }
     
     // play the first retrieved track
@@ -412,6 +419,31 @@ export default class HomeScreen extends React.Component {
       </TouchableOpacity>
     );
 
+    const previousButton = this.state.previous ? (
+      <TouchableOpacity>
+        <MaterialIcons name={"skip-previous"} size={50} color={colors.playerIcon}/>
+      </TouchableOpacity>
+    ) : null;
+
+    const nextButton = this.state.next ? (
+      <TouchableOpacity>
+        <MaterialIcons name={"skip-next"} size={50} color={colors.playerIcon}/>
+      </TouchableOpacity>
+    ) : null;
+      
+    const historyListButton = this.state.previous ? (
+      <TouchableOpacity>
+        <MaterialIcons name={"history"} size={50} color={colors.playerIcon}/>
+      </TouchableOpacity>
+    ) : null;
+
+    const followingListButton = this.state.next ? (
+      <TouchableOpacity>
+        <MaterialIcons name={"playlist-play"} size={50} color={colors.playerIcon}/>
+      </TouchableOpacity>
+    ) : null;
+
+
     return (
       <View style={styles.home}>
         <View style={styles.player}>
@@ -425,26 +457,21 @@ export default class HomeScreen extends React.Component {
           </View>
         </View>
 
-        {/* <View style={styles.sliderWrapper}>
-          <Slider
-            minimumValue={0}
-            maximumValue={100}
-            step={1}
-            value={50}
-            minimumTrackTintColor={colors.minimumTrackColor}
-            maximumTrackTintColor={colors.maximumTrackColor}
-            thumbTintColor={colors.thumbColor}
-            trackStyle={styles.sliderTrack}
-            thumbStyle={styles.sliderThumb}
-          />
-        </View> */}
+        <View style={styles.listButtonsWrapper}>
+          {historyListButton}
+          {followingListButton}
+        </View>
 
         <View style={styles.mediaButtonsWrapper}>
           <TouchableOpacity onPress={this._handleRecorderPress.bind(this)}>
             <MaterialIcons name={micIcon} size={50} color={colors.playerIcon} />
           </TouchableOpacity>
 
+          {previousButton}          
+
           {middleButton}
+
+          {nextButton}
 
           <TouchableOpacity
             onPress={() =>
@@ -471,7 +498,7 @@ const styles = StyleSheet.create({
     flex: 3,
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: 50
+    paddingTop: 80
   },
   playerImgWrapper: {
     width: 300,
@@ -516,6 +543,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.53,
     shadowRadius: 13.97,
     elevation: 21
+  },
+  listButtonsWrapper: {
+    flex: 0,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingLeft: 28,
+    paddingRight: 28
   },
   mediaButtonsWrapper: {
     flex: 1,
