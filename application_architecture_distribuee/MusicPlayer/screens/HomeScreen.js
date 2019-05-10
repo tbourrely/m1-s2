@@ -18,6 +18,8 @@ import { MaterialIcons } from "@expo/vector-icons";
 import colors from "./../theme/colors";
 import config from './../theme/config';
 
+import ImageLoader from './../components/ImageLoader';
+
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null
@@ -414,7 +416,7 @@ export default class HomeScreen extends React.Component {
       <View style={styles.home}>
         <View style={styles.player}>
           <View style={styles.playerImgWrapper}>
-            <Image source={{ uri: imgURI }} style={styles.playerImg} />
+            <ImageLoader source={{ uri: imgURI }} style={styles.playerImg} trackName={title} />
           </View>
 
           <View style={styles.playerInfos}>
