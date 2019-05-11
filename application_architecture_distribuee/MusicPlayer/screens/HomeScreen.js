@@ -19,6 +19,7 @@ import colors from "./../theme/colors";
 import config from './../theme/config';
 
 import ImageLoader from './../components/ImageLoader';
+import TrackListModal from './../components/TrackListModal';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -39,8 +40,8 @@ export default class HomeScreen extends React.Component {
         cover: null,
         streamingLink: null
       },
-      previous: true,
-      next: true
+      previous: false,
+      next: false
     };
 
     this.history = []; // previous tracks (only when multiple tracks are returned from the 'play' request)
@@ -48,6 +49,15 @@ export default class HomeScreen extends React.Component {
 
     this.recorder = null;
     this.player = null;
+  }
+
+  async testGetData() {
+    const data = await ajax.fetchStreamingLink(
+      '',
+      'muse',
+      ''
+    );
+    this._handleStreamingServerResponse(data);
   }
 
   componentDidMount() {
@@ -58,6 +68,8 @@ export default class HomeScreen extends React.Component {
         this.setAudioPermission(true);
       }
     });
+
+    this.testGetData();
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -115,10 +127,12 @@ export default class HomeScreen extends React.Component {
 
   _resetHistory() {
     this.history = [];
+    this.setState({previous: false});
   }
 
   _resetFollowingTracks() {
     this.followingTracks = [];
+    this.setState({next: false});
   }
 
   _askAudioPermission() {
@@ -146,6 +160,62 @@ export default class HomeScreen extends React.Component {
     this._resetCurrentStreamingData();
     this._resetHistory();
     this._resetFollowingTracks();
+  }
+
+  _goToNext() {
+    // push the current track to the history
+    currentTrack = this.state.currentStreamingData;
+    this.history.push({
+      link: currentTrack.streamingLink,
+      artist: currentTrack.artist,
+      title: currentTrack.title,
+      album: currentTrack.album
+    });
+
+    if (this.history.length === 1 && !this.state.previous) {
+      this.setState({previous: true});
+    }
+
+    // play the following track
+    track = this.followingTracks.shift();
+
+    if (!this.followingTracks.length && this.state.next) {
+      this.setState({next: false});
+    }
+
+    this._updateCurrentStreamingData(
+      track.link,
+      track.title,
+      track.artist,
+      track.album
+    );
+  }
+
+  _goToPrevious() {
+    // set the the next track as the current one
+    currentTrack = this.state.currentStreamingData;
+    this.followingTracks.unshift({
+      link: currentTrack.streamingLink,
+      artist: currentTrack.artist,
+      title: currentTrack.title,
+      album: currentTrack.album
+    });
+
+    if (this.followingTracks.length && !this.state.next) {
+      this.setState({next: true});
+    }
+    
+    // set the current track as the previous one
+    track = this.history.pop();
+    if (!this.history.length && this.state.previous) {
+      this.setState({previous: false});
+    }
+    this._updateCurrentStreamingData(
+      track.link,
+      track.title,
+      track.artist,
+      track.album
+    );
   }
 
   async _handleWitResponse(response) {
@@ -194,27 +264,7 @@ export default class HomeScreen extends React.Component {
             return;
           }
 
-          // push the current track to the history
-          currentTrack = this.state.currentStreamingData;
-          this.history.push({
-            link: currentTrack.streamingLink,
-            artist: currentTrack.artist,
-            title: currentTrack.title,
-            album: currentTrack.album
-          });
-
-          if (this.history.length === 1) {
-            this.setState({previous: true});
-          }
-
-          // play the following track
-          track = this.followingTracks.shift();
-          this._updateCurrentStreamingData(
-            track.link,
-            track.title,
-            track.artist,
-            track.album
-          );
+          this._goToNext();
           break;
 
         case "previous":
@@ -223,23 +273,7 @@ export default class HomeScreen extends React.Component {
             return;
           }
 
-          // set the the next track as the current one
-          currentTrack = this.state.currentStreamingData;
-          this.followingTracks.unshift({
-            link: currentTrack.streamingLink,
-            artist: currentTrack.artist,
-            title: currentTrack.title,
-            album: currentTrack.album
-          });
-          
-          // set the current track as the previous one
-          track = this.history.pop();
-          this._updateCurrentStreamingData(
-            track.link,
-            track.title,
-            track.artist,
-            track.album
-          );
+          this._goToPrevious();
           break;
 
         case "play":
@@ -420,29 +454,19 @@ export default class HomeScreen extends React.Component {
     );
 
     const previousButton = this.state.previous ? (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={this._goToPrevious.bind(this)}>
         <MaterialIcons name={"skip-previous"} size={50} color={colors.playerIcon}/>
       </TouchableOpacity>
     ) : null;
 
     const nextButton = this.state.next ? (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={this._goToNext.bind(this)}>
         <MaterialIcons name={"skip-next"} size={50} color={colors.playerIcon}/>
       </TouchableOpacity>
     ) : null;
       
-    const historyListButton = this.state.previous ? (
-      <TouchableOpacity>
-        <MaterialIcons name={"history"} size={50} color={colors.playerIcon}/>
-      </TouchableOpacity>
-    ) : null;
-
-    const followingListButton = this.state.next ? (
-      <TouchableOpacity>
-        <MaterialIcons name={"playlist-play"} size={50} color={colors.playerIcon}/>
-      </TouchableOpacity>
-    ) : null;
-
+    const historyListButton = this.state.previous ? <TrackListModal data={this.history} title={"Previous"} icon={"history"}/> : null;
+    const followingListButton = this.state.next ? <TrackListModal data={this.followingTracks} title={"Next"} icon={"playlist-play"}/> : null;
 
     return (
       <View style={styles.home}>

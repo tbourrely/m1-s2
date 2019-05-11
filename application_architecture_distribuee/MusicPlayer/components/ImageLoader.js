@@ -17,6 +17,7 @@ class ImageLoader extends React.Component {
     componentWillReceiveProps(next) {
         if (next.source.uri !== this.props.source.uri || next.trackName !== this.props.trackName) {
             this.state.opacity.setValue(0);
+            next.source.uri += '?date' + new Date(); // fix onLoadEnd not firing when image taken from cache
         }
     }
 
