@@ -4,12 +4,14 @@ import {Animated, View} from 'react-native';
 class ImageLoader extends React.Component {
     state = {
         opacity: new Animated.Value(0),
+        showLoader: true
     }
 
-    onLoad = () => {
+    onLoadEnd = () => {
+        this.setState({showLoader: false});
         Animated.timing(this.state.opacity, {
             toValue: 1,
-            duration: 500,
+            duration: 200,
             useNativeDriver: true
         }).start();
     }
@@ -22,25 +24,38 @@ class ImageLoader extends React.Component {
     }
 
     render() {
+
+        const loader = this.state.showLoader ? (<Animated.Image style={{
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0
+        }} source={{uri: "https://loading.io/spinners/sketch/lg.scratching-reveal-loader.gif"}}/>) : null;
+
         return(
-            <Animated.Image
-                onLoadEnd={this.onLoad}
-                {...this.props}
-                style={[
-                    {
-                    opacity: this.state.opacity,
-                    transform: [
+            <View>
+                <Animated.Image
+                    onLoadStart={() => {this.setState({showLoader: true})}}
+                    onLoadEnd={this.onLoadEnd}
+                    {...this.props}
+                    style={[
                         {
-                            scale: this.state.opacity.interpolate({
-                                inputRange: [0, 1],
-                                outputRange: [0.85, 1],
-                            })
-                        }
-                    ]
-                },
-                this.props.style
-            ]}
-            />
+                        opacity: this.state.opacity,
+                        transform: [
+                            {
+                                scale: this.state.opacity.interpolate({
+                                    inputRange: [0, 1],
+                                    outputRange: [0.85, 1],
+                                })
+                            }
+                        ]
+                    },
+                    this.props.style
+                ]}
+                />
+                {loader}
+            </View>
         )
     }
 }
