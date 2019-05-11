@@ -41,7 +41,8 @@ export default class HomeScreen extends React.Component {
         streamingLink: null
       },
       previous: false,
-      next: false
+      next: false,
+      fetching: false
     };
 
     this.history = []; // previous tracks (only when multiple tracks are returned from the 'play' request)
@@ -69,7 +70,7 @@ export default class HomeScreen extends React.Component {
       }
     });
 
-    this.testGetData();
+    // this.testGetData();
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -84,21 +85,27 @@ export default class HomeScreen extends React.Component {
   }
 
   async _updateCurrentStreamingData(trackUrl, title, artist, album, cleanHistoryAndFollowing = false) {
+    let newState = {};
+
     if (cleanHistoryAndFollowing === true) {
-      this._resetHistory();
-      this._resetFollowingTracks();
+      this.history = [];
+      this.followingTracks = [];
+
+      newState['next'] = false;
+      newState['previous'] = false;
     }
 
     coverUrl = await ajax.fetchCover({album: album, artist: artist});
-    this.setState({
-      currentStreamingData: {
-        title: title,
-        artist: artist,
-        album: album,
-        cover: coverUrl,
-        streamingLink: trackUrl
-      }
-    });
+    
+    newState['currentStreamingData'] = {
+      title: title,
+      artist: artist,
+      album: album,
+      cover: coverUrl,
+      streamingLink: trackUrl
+    };
+
+    this.setState(newState);
   }
 
   _resetCurrentStreamingData() {
@@ -156,13 +163,26 @@ export default class HomeScreen extends React.Component {
   }
 
   _handleStopPress() {
-    this._stopPlaying();
-    this._resetCurrentStreamingData();
-    this._resetHistory();
-    this._resetFollowingTracks();
+    this._stopPlayer();
+    this.history = [];
+    this.followingTracks = []; 
+    this.setState({
+      playing: false,
+      currentStreamingData: {
+        title: null,
+        artist: null,
+        album: null,
+        cover: null,
+        streamingLink: null,
+      },
+      previous: false,
+      next: false
+    });
   }
 
-  _goToNext() {
+  async _goToNext() {
+    let newState = {};
+
     // push the current track to the history
     currentTrack = this.state.currentStreamingData;
     this.history.push({
@@ -173,25 +193,32 @@ export default class HomeScreen extends React.Component {
     });
 
     if (this.history.length === 1 && !this.state.previous) {
-      this.setState({previous: true});
+      newState['previous'] = true;
     }
 
     // play the following track
     track = this.followingTracks.shift();
 
     if (!this.followingTracks.length && this.state.next) {
-      this.setState({next: false});
+      newState['next'] = false;
     }
 
-    this._updateCurrentStreamingData(
-      track.link,
-      track.title,
-      track.artist,
-      track.album
-    );
+    coverUrl = await ajax.fetchCover({album: track.album, artist: track.artist});
+
+    newState['currentStreamingData'] = {
+      title: track.title,
+      artist: track.artist,
+      album: track.album,
+      cover: coverUrl,
+      streamingLink: track.link
+    };
+
+    this.setState(newState);
   }
 
-  _goToPrevious() {
+  async _goToPrevious() {
+    let newState = {};
+
     // set the the next track as the current one
     currentTrack = this.state.currentStreamingData;
     this.followingTracks.unshift({
@@ -202,20 +229,26 @@ export default class HomeScreen extends React.Component {
     });
 
     if (this.followingTracks.length && !this.state.next) {
-      this.setState({next: true});
+      newState['next'] = true;
     }
     
     // set the current track as the previous one
     track = this.history.pop();
     if (!this.history.length && this.state.previous) {
-      this.setState({previous: false});
+      newState['previous'] = false;
     }
-    this._updateCurrentStreamingData(
-      track.link,
-      track.title,
-      track.artist,
-      track.album
-    );
+    
+    coverUrl = await ajax.fetchCover({album: track.album, artist: track.artist});
+
+    newState['currentStreamingData'] = {
+      title: track.title,
+      artist: track.artist,
+      album: track.album,
+      cover: coverUrl,
+      streamingLink: track.link
+    };
+
+    this.setState(newState);
   }
 
   async _handleWitResponse(response) {
@@ -252,10 +285,7 @@ export default class HomeScreen extends React.Component {
           break;
 
         case "stop":
-          this._stopPlaying();
-          this._resetCurrentStreamingData();
-          this._resetHistory();
-          this._resetFollowingTracks();
+          this._handleStopPress();
           break;
 
         case "next":
@@ -299,6 +329,8 @@ export default class HomeScreen extends React.Component {
           break;
       }
     }
+
+    this.setState({fetching: false});
   }
 
   async _handleStreamingServerResponse(response) {
@@ -307,8 +339,12 @@ export default class HomeScreen extends React.Component {
       Alert.alert('', "No match !");
       return;
     }
+    
+    this.history = [];
+    let newState = {
+      previous: false,
+    };
 
-    this._resetHistory();
     track = response.tracks[0];
     
     // set the following tracks with the new correct value
@@ -316,19 +352,24 @@ export default class HomeScreen extends React.Component {
     // otherwise, all the retrieved tracks except the first are the following tracks
     if (response.nbTracks === 1) {
       this.followingTracks = [];
+      newState['next'] = false;
     } else {
       response.tracks.shift();
       this.followingTracks = response.tracks;
-      this.setState({next: true})
+      newState['next'] = true;
     }
-    
-    // play the first retrieved track
-    this._updateCurrentStreamingData(
-      track.link,
-      track.title,
-      track.artist,
-      track.album
-    );
+
+    coverUrl = await ajax.fetchCover({album: track.album, artist: track.artist});
+
+    newState['currentStreamingData'] = {
+      title: track.title,
+      artist: track.artist,
+      album: track.album,
+      cover: coverUrl,
+      streamingLink: track.link
+    };
+
+    this.setState(newState);
   }
 
   async _startRecording() {
@@ -356,7 +397,10 @@ export default class HomeScreen extends React.Component {
         this.recorder.stopAndUnloadAsync().then(status => {
           if (status.isDoneRecording) {
             this.recorder = null;
-            this.setRecording(false);
+            this.setState({
+              recording: false,
+              fetching: true
+            });
             
             wit.getIntentFromAudio({uri, name: 'test', 'type': 'audio/3gpp'}).then(resp => this._handleWitResponse(resp));
           }
@@ -472,7 +516,7 @@ export default class HomeScreen extends React.Component {
       <View style={styles.home}>
         <View style={styles.player}>
           <View style={styles.playerImgWrapper}>
-            <ImageLoader source={{ uri: imgURI }} style={styles.playerImg} trackName={title} />
+            <ImageLoader source={{ uri: imgURI }} showLoader={this.state.fetching} style={styles.playerImg} trackName={title} />
           </View>
 
           <View style={styles.playerInfos}>

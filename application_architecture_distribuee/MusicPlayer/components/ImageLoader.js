@@ -1,5 +1,6 @@
 import React from 'react';
 import {Animated, View} from 'react-native';
+import colors from "./../theme/colors";
 
 class ImageLoader extends React.Component {
     state = {
@@ -25,13 +26,16 @@ class ImageLoader extends React.Component {
 
     render() {
 
-        const loader = this.state.showLoader ? (<Animated.Image style={{
+        const loader = this.props.showLoader || this.state.showLoader ? (<View style={{
+            backgroundColor: colors.appBackground,
             width: "100%",
             height: "100%",
             position: "absolute",
             top: 0,
             left: 0
-        }} source={{uri: "https://loading.io/spinners/sketch/lg.scratching-reveal-loader.gif"}}/>) : null;
+        }}>
+            <Animated.Image style={{width: "100%", height: "100%"}} source={{uri: this.props.showLoader ? "https://loading.io/spinners/disqus/lg.discuss-messesage-preloader.gif" : "https://loading.io/spinners/sketch/lg.scratching-reveal-loader.gif"}}/>
+        </View>) : null;
 
         return(
             <View>
