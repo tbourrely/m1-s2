@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
   SectionList,
   Text,
-  Picker
+  Picker,
+  Image
 } from "react-native";
 import FlatListItem from "./../components/FlatListItem";
 import colors from "./../theme/colors";
@@ -23,7 +24,8 @@ export default class LibraryScreen extends React.Component {
     tracks: {},
     albumList: [],
     artistList: [],
-    filter: 'artist'
+    filter: 'artist',
+    showLoader: true
   };
 
   _keyExtractor = (item, index) => item.path;
@@ -87,7 +89,7 @@ export default class LibraryScreen extends React.Component {
       })
     );
 
-    this.setState({ tracks, artistList, albumList });
+    this.setState({ tracks, artistList, albumList, showLoader: false });
   }
 
   render() {
@@ -95,6 +97,13 @@ export default class LibraryScreen extends React.Component {
 
     if (this.state.filter === 'album') sections = this._filterByAlbum();
     if (this.state.filter === 'artist') sections = this._filterByArtist();
+
+    const loader = this.state.showLoader ? (<View style={styles.loader}>
+      <Image style={{
+        width: 200,
+        height: 200,
+      }} source={{uri: "https://loading.io/spinners/sketch/lg.scratching-reveal-loader.gif"}}/>
+    </View>) : null;
 
     return (
       <View style={{ flex: 1 }}>
@@ -125,6 +134,8 @@ export default class LibraryScreen extends React.Component {
         >
           <MaterialIcons name="album" size={40} color={colors.playerIcon} />
         </TouchableOpacity>
+
+        {loader}
       </View>
     );
   }
@@ -155,5 +166,16 @@ const styles = StyleSheet.create({
     fontSize: 30,
     paddingLeft: 20,
     paddingRight: 20
+  },
+  loader: {
+    position: 'absolute',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.appBackground,
+    height: "100%",
+    width: "100%",
+    top: 0,
+    left: 0,
   }
 });
