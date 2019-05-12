@@ -70,7 +70,7 @@ export default class HomeScreen extends React.Component {
       }
     });
 
-    this.testGetData();
+    // this.testGetData();
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -304,19 +304,18 @@ export default class HomeScreen extends React.Component {
         case "play":
           if (entitiesLength === 1) {
             this._startPlaying();
-            return;
+          } else {
+            const artist = undefined !== $entities['artist'] ? $entities['artist'].reduce(highestConfidenceLevel).value : "";
+            const title = undefined !== $entities['track'] ? $entities['track'].reduce(highestConfidenceLevel).value : "";
+            const album = undefined !== $entities['album'] ? $entities['album'].reduce(highestConfidenceLevel).value : "";
+  
+            const data = await ajax.fetchStreamingLink(
+              title,
+              artist,
+              album
+            );
+            this._handleStreamingServerResponse(data);
           }
-
-          const artist = undefined !== $entities['artist'] ? $entities['artist'].reduce(highestConfidenceLevel).value : "";
-          const title = undefined !== $entities['track'] ? $entities['track'].reduce(highestConfidenceLevel).value : "";
-          const album = undefined !== $entities['album'] ? $entities['album'].reduce(highestConfidenceLevel).value : "";
-
-          const data = await ajax.fetchStreamingLink(
-            title,
-            artist,
-            album
-          );
-          this._handleStreamingServerResponse(data);
           break;
 
         default:

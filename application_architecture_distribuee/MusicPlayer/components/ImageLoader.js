@@ -12,11 +12,13 @@ class ImageLoader extends React.Component {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        return this.props.trackName !== nextProps.trackName || this.props.source.uri !== nextProps.source.uri;
+        return this.props.trackName !== nextProps.trackName 
+            || this.props.source.uri !== nextProps.source.uri 
+            || this.state.showLoader !== nextState.showLoader;
     }
 
     render() {
-        const loader = this.props.showLoader || this.state.showLoader ? (<View style={{
+        const loader = this.state.showLoader ? (<View style={{
             backgroundColor: colors.appBackground,
             width: "100%",
             height: "100%",
