@@ -70,7 +70,7 @@ export default class HomeScreen extends React.Component {
       }
     });
 
-    // this.testGetData();
+    this.testGetData();
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -254,14 +254,9 @@ export default class HomeScreen extends React.Component {
   async _handleWitResponse(response) {
     console.log(response);
 
-    if (response['entities'] !== undefined && Object.keys(response['entities']).length) {
+    if (response['entities'] !== undefined && Object.keys(response['entities']).length && response['entities']['intent'] !== undefined) {
       const $entities = response['entities'];
       const entitiesLength = Object.keys(response['entities']).length
-
-      if ($entities['intent'] === undefined) {
-        Alert.alert("", "Sorry, i did not understand your request !");
-        return;
-      }
 
       const intentList = $entities['intent'];
 
@@ -479,11 +474,7 @@ export default class HomeScreen extends React.Component {
     const title = this.state.currentStreamingData.title || "-";
     const artist = this.state.currentStreamingData.artist || "-";
 
-    const middleButton = this.state.recording ? (
-      <View style={styles.mediaButtonsPlayPause}>
-        <ActivityIndicator size={50} color={colors.playerIcon} />
-      </View>
-    ) : (
+    let middleButton = (
       <TouchableOpacity
         style={styles.mediaButtonsPlayPause}
         onPress={this._togglePlaying.bind(this)}
@@ -496,6 +487,14 @@ export default class HomeScreen extends React.Component {
         />
       </TouchableOpacity>
     );
+
+    if (this.state.recording || this.state.fetching) {
+      middleButton = (
+        <View style={styles.mediaButtonsPlayPause}>
+          <ActivityIndicator size={50} color={this.state.recording ? colors.playerIcon : 'red'} />
+        </View>
+      )
+    }
 
     const previousButton = this.state.previous ? (
       <TouchableOpacity onPress={this._goToPrevious.bind(this)}>
@@ -516,7 +515,7 @@ export default class HomeScreen extends React.Component {
       <View style={styles.home}>
         <View style={styles.player}>
           <View style={styles.playerImgWrapper}>
-            <ImageLoader source={{ uri: imgURI }} showLoader={this.state.fetching} style={styles.playerImg} trackName={title} />
+            <ImageLoader source={{ uri: imgURI }} style={styles.playerImg} trackName={title} />
           </View>
 
           <View style={styles.playerInfos}>
