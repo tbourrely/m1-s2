@@ -33,6 +33,8 @@ Plus la valeur de 'Executable Lines of Code' est grande, plus la valeur de 'Exte
 
 ![](graphiques/graph2.svg)
 
+On voit ici que pour les méthodes 'compile' et 'processFormData', toutes les métriques sont trop élevées. On peut savoir à l'avance que la modification de ces méthodes sera un travail laborieux.
+
 ## Avis quant à modification
 
 ### generate
@@ -85,4 +87,9 @@ Pour finir, automatiser ces tests serait bénéfique. Il est possible de le fair
 
 # PHP Depend est-il le bon outil pour contrôler ?
 
+Il est intéressant pour obtenir les métriques telles que le npath, ...
+Cependant il ne permet pas de faire une analyse complète en prenant en compte un code style.
+
 # PHP Mess Detector est-il plus adapté ?
+
+Oui, l'utilisation du code style de symfony par défaut est un adapté à la plupart des cas, de plus le fait de pouvoir générer un rapport en html plutôt qu'en xml est utile.
