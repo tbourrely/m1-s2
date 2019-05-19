@@ -10,11 +10,12 @@ def post():
         Response -- 
     """
     ip = request.form['ip']
+    api_key = request.form['apiKey']
 
     if client.servers.find_one({'ip': ip}):
         return Response('already exists', status=409)
     
-    result = client.servers.insert_one({'ip': ip})
+    result = client.servers.insert_one({'ip': ip, 'api_key': api_key})
 
     if result.inserted_id is not None:
         return Response(status=200)

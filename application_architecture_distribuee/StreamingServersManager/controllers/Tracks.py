@@ -124,7 +124,8 @@ def requestLink(serverIp, track):
                 track.get('artist'),
                 track.get('path')
             )
-            playResult = server.play(trackObject, os.getenv('API_KEY'))
+            api_key = client.servers.find_one({'ip': serverIp}).api_key
+            playResult = server.play(trackObject, api_key)
 
             return playResult if playResult != '-1' else False
 
